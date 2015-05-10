@@ -1,0 +1,65 @@
+--- kern/init.c	2007-10-09 23:32:52.000000000 +0800
++++ kern/init.c	2015-04-06 15:58:59.743959132 +0800
+@@ -39,34 +52,56 @@
+ 
+ 	// Initialize the console.
+ 	// Can't call cprintf until after we do this!
+-	cons_init();
+-
+-	cprintf("6828 decimal is %o octal!\n", 6828);
+-
++	cons_init();//console's init
++	cprintf("the Lab1 check begin\n");
++ 	cprintf("6828 decimal is %o octal!\n", 6828);
++    selffun();//use a funtion
++    //test_backtrace(5);//backtrace 's show on a function
+ 	// Lab 2 memory management initialization functions
++	cprintf("the Lab2 check begin\n");
+ 	i386_detect_memory();
+ 	i386_vm_init();
+ 
+ 	// Lab 3 user environment initialization functions
++	cprintf("the Lab3 check begin\n");
+ 	env_init();
+ 	idt_init();
+-
++    //ENV_CREATE(user_hello);
++	//ENV_CREATE(user_divzero);
++	//ENV_CREATE(user_buggyhello);
++	//ENV_CREATE(user_softint);
++	//ENV_CREATE(user_testbss);
++	//ENV_CREATE(user_breakpoint);
++	//ENV_CREATE(user_evilhello);
+ 	// Lab 4 multitasking initialization functions
+ 	pic_init();
+ 	kclock_init();
+ 
+ 	// Should always have an idle process as first one.
+ 	ENV_CREATE(user_idle);
++	//ENV_CREATE(user_forktree);
++	//ENV_CREATE(user_yield);
+ 
+ #if defined(TEST)
+ 	// Don't touch -- used by grading script!
+ 	ENV_CREATE2(TEST, TESTSIZE)
+ #else
+ 	// Touch all you want.
++	//ENV_CREATE(user_yield);
++	//ENV_CREATE(user_yield);
++	//ENV_CREATE(user_priorsched);
+ 	ENV_CREATE(user_primes);
++	//ENV_CREATE(user_pingpong);
++	//ENV_CREATE(user_dumbfork);
++	//ENV_CREATE(user_faultread);
++	//ENV_CREATE(user_faultdie);
++	//ENV_CREATE(user_faultalloc);
++	//ENV_CREATE(user_forktree);
++	//ENV_CREATE(user_spin);
++	//ENV_CREATE(user_faultread);
++	//ENV_CREATE(user_faultread);
+ #endif // TEST*
+ 
+-
+ 	// Schedule and run the first user environment!
+ 	sched_yield();
+ 
