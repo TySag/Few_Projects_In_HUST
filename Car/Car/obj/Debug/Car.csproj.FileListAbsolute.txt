@@ -1,0 +1,9 @@
+E:\WorkSpace\课程内容\数据库\Car\Car\bin\Debug\Car.exe
+E:\WorkSpace\课程内容\数据库\Car\Car\bin\Debug\Car.pdb
+E:\WorkSpace\课程内容\数据库\Car\Car\obj\Debug\Car.csprojResolveAssemblyReference.cache
+E:\WorkSpace\课程内容\数据库\Car\Car\obj\Debug\Car.Login.resources
+E:\WorkSpace\课程内容\数据库\Car\Car\obj\Debug\Car.Properties.Resources.resources
+E:\WorkSpace\课程内容\数据库\Car\Car\obj\Debug\Car.csproj.GenerateResource.Cache
+E:\WorkSpace\课程内容\数据库\Car\Car\obj\Debug\Car.exe
+E:\WorkSpace\课程内容\数据库\Car\Car\obj\Debug\Car.pdb
+E:\WorkSpace\课程内容\数据库\Car\Car\obj\Debug\Car.CarMain.resources
