@@ -6,8 +6,7 @@ create table Users(
   Name char(10) null, 
   Mail char(20) not null,
   Phone char(15) null, Address char(30) null,
-  Blacklabel bool default 1
-);
+  Blacklabel bool default 1);
 
 create table CarsInfo(
   Name char(10) primary key,
@@ -27,8 +26,6 @@ create table Cars(
   Days int not null default 0,
   State char(10) not null,
   foreign key(Name) references CarsInfo(Name)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE
 );
 
 create table Staffs(
@@ -45,12 +42,8 @@ create table Orders(
   Days int default 1,
   Date Datetime not null default now(),
   Checked bool not null default 0,
-  foreign key(Cid) references Cars(Cid)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE,
+  foreign key(Cid) references Cars(Cid),
   foreign key(Uid) references Users(Uid)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE
 );
   
 create table Records(
@@ -61,15 +54,9 @@ create table Records(
   Days int not null,
   Cost int not null,
   Date Datetime not null default now(),
-  foreign key(Cid) references Cars(Cid)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE,
-  foreign key(Uid) references Users(Uid)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE,
+  foreign key(Cid) references Cars(Cid),
+  foreign key(Uid) references Users(Uid),
   foreign key(Sid) references Staffs(Sid)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE
 );
   
 create table Fixlist(
@@ -78,8 +65,6 @@ create table Fixlist(
   Fix char(40),
   Cost int,
   foreign key(Rid) references Records(Rid)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE
 );
 
 create table Accident(
@@ -87,8 +72,6 @@ create table Accident(
   Rid char(10) not null,
   Acc char(40),
   foreign key(Rid) references Records(Rid)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE
 );  
 
 /*
@@ -120,68 +103,42 @@ end
 
 delimiter |
 create trigger addOrder
-after insert on Orders
+before insert on Orders
 for each row 
 begin
-   update cars
-   set cars.State = 'select'
-   where cars.cid = new.cid;
    update carsinfo, cars
-   set CarsInfo.Availnum = CarsInfo.Availnum - 1
-   where cars.cid = new.cid and carsinfo.Name = cars.Name;
+   set CarsInfo.Availnum = Availnum - 1,
+   cars.State = 'select'
+   where carsinfo.Name = cars.Name and cars.cid = new.cid;
 end
 |
 
 delimiter |
-create trigger UpOrder
-after update on Orders
+create trigger addOrder
+before insert on Orders
 for each row 
 begin
-   if new.Checked = true then
    update cars
-   set cars.State = 'use'
+   cars.State = 'use'
    where cars.cid = old.cid;
-   end if;
 end
 |
 
 delimiter |
 create trigger moveOrder
-after delete on Orders
-for each row 
-begin
-   update cars
-   set cars.State = 'wait'
-   where cars.cid = old.cid;
-   update carsinfo, cars
-   set CarsInfo.Availnum = CarsInfo.Availnum + 1
-   where cars.cid = old.cid and carsinfo.Name = cars.Name;
-end
-|
-
-delimiter |
-create trigger addRecord
 after insert on Records
 for each row 
 begin
-   update cars
-   set cars.State = 'wait',
-   cars.Days = cars.Days + new.Days
-   where cars.cid = new.cid;
    update carsinfo, cars
    set CarsInfo.Availnum = Availnum + 1,
-   CarsInfo.Popular = CarsInfo.Popular + new.days
-   where cars.cid = new.cid and carsinfo.Name = cars.Name;
+   cars.State = 'wait'
+   where carsinfo.Name = cars.Name and cars.cid = new.cid;
 end
 |
 
-
-
-
-
-/*drop trigger movecar;
-drop trigger addOrder;
-drop trigger addcar;drop trigger addOrder;
+/*
+drop trigger movecar;
+drop trigger addcar;
 drop table Fixlist;
 drop table accident;
 drop table records;

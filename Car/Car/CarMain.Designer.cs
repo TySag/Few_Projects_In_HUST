@@ -91,14 +91,6 @@
             this.CarsNameText = new System.Windows.Forms.TextBox();
             this.CarsIDText = new System.Windows.Forms.TextBox();
             this.UserChoose = new System.Windows.Forms.Panel();
-            this.PowerEditBox = new System.Windows.Forms.Panel();
-            this.CancelChange = new System.Windows.Forms.Button();
-            this.ApplyChange = new System.Windows.Forms.Button();
-            this.label31 = new System.Windows.Forms.Label();
-            this.PowerExit = new System.Windows.Forms.Button();
-            this.PowerDel = new System.Windows.Forms.Button();
-            this.PowerUpdate = new System.Windows.Forms.Button();
-            this.PowerAdd = new System.Windows.Forms.Button();
             this.UserMailText = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -142,19 +134,35 @@
             this.label21 = new System.Windows.Forms.Label();
             this.UserReset = new System.Windows.Forms.Button();
             this.UserEditCancel = new System.Windows.Forms.Button();
-            this.NONE_board = new System.Windows.Forms.Panel();
-            this.NONE_Return = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.LogOut = new System.Windows.Forms.Button();
             this.Spos_Label = new System.Windows.Forms.Label();
             this.Sname_Label = new System.Windows.Forms.Label();
             this.Sid_Label = new System.Windows.Forms.Label();
             this.UserInfo = new System.Windows.Forms.TabPage();
             this.UserData = new System.Windows.Forms.DataGridView();
+            this.UserJudge = new System.Windows.Forms.Panel();
+            this.UserJName = new System.Windows.Forms.TextBox();
+            this.UserPoint = new System.Windows.Forms.Label();
+            this.AccCarJ = new System.Windows.Forms.Label();
+            this.FixCarJ = new System.Windows.Forms.Label();
+            this.LendJ = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.GetUserPoint = new System.Windows.Forms.Button();
+            this.AddToBlack = new System.Windows.Forms.Button();
+            this.ExitPoint = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
             this.CarsInfo = new System.Windows.Forms.TabPage();
             this.CarsData = new System.Windows.Forms.DataGridView();
             this.OrderInfo = new System.Windows.Forms.TabPage();
             this.OrderData = new System.Windows.Forms.DataGridView();
+            this.PowerEditBox = new System.Windows.Forms.Panel();
+            this.CancelChange = new System.Windows.Forms.Button();
+            this.ApplyChange = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.PowerExit = new System.Windows.Forms.Button();
+            this.PowerDel = new System.Windows.Forms.Button();
+            this.PowerUpdate = new System.Windows.Forms.Button();
+            this.PowerAdd = new System.Windows.Forms.Button();
             this.OrderChoose = new System.Windows.Forms.Panel();
             this.OCarsIDText = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -182,6 +190,9 @@
             this.Uid_Label = new System.Windows.Forms.Label();
             this.Mail_Label = new System.Windows.Forms.Label();
             this.UserName_Label = new System.Windows.Forms.Label();
+            this.NONE_board = new System.Windows.Forms.Panel();
+            this.NONE_Return = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.PowerBox = new System.Windows.Forms.GroupBox();
             this.SelectPower = new System.Windows.Forms.Button();
             this.EditMessage = new System.Windows.Forms.Button();
@@ -201,28 +212,20 @@
             this.HelpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.VMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpShowMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.UserJudge = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
-            this.ExitPoint = new System.Windows.Forms.Button();
-            this.AddToBlack = new System.Windows.Forms.Button();
-            this.GetUserPoint = new System.Windows.Forms.Button();
-            this.label100 = new System.Windows.Forms.Label();
-            this.LendJ = new System.Windows.Forms.Label();
-            this.FixCarJ = new System.Windows.Forms.Label();
-            this.AccCarJ = new System.Windows.Forms.Label();
-            this.UserPoint = new System.Windows.Forms.Label();
-            this.UserJName = new System.Windows.Forms.TextBox();
             this.MoneyShow = new System.Windows.Forms.Panel();
-            this.OldTimer = new System.Windows.Forms.DateTimePicker();
-            this.NewTimer = new System.Windows.Forms.DateTimePicker();
+            this.AllMoney = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.MakeTable = new System.Windows.Forms.Button();
+            this.CloseTable = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.RecordShow = new System.Windows.Forms.DataGridView();
-            this.CloseTable = new System.Windows.Forms.Button();
-            this.MakeTable = new System.Windows.Forms.Button();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.AllMoney = new System.Windows.Forms.Label();
+            this.ReturnCost = new System.Windows.Forms.Panel();
+            this.ReturnCostSure = new System.Windows.Forms.Button();
+            this.ReturnCostBoard = new System.Windows.Forms.RichTextBox();
+            this.NewTimer = new System.Windows.Forms.DateTimePicker();
+            this.OldTimer = new System.Windows.Forms.DateTimePicker();
             this.UserM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UserPic)).BeginInit();
             this.MakeOrderBox.SuspendLayout();
@@ -234,19 +237,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.CarData)).BeginInit();
             this.CarsChoose.SuspendLayout();
             this.UserChoose.SuspendLayout();
-            this.PowerEditBox.SuspendLayout();
             this.RecordChoose.SuspendLayout();
             this.AccChoose.SuspendLayout();
             this.CarChoose.SuspendLayout();
             this.StaffEditBox.SuspendLayout();
             this.UserEditBox.SuspendLayout();
-            this.NONE_board.SuspendLayout();
             this.UserInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UserData)).BeginInit();
+            this.UserJudge.SuspendLayout();
             this.CarsInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CarsData)).BeginInit();
             this.OrderInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrderData)).BeginInit();
+            this.PowerEditBox.SuspendLayout();
             this.OrderChoose.SuspendLayout();
             this.FixChoose.SuspendLayout();
             this.Record.SuspendLayout();
@@ -257,12 +260,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.AccData)).BeginInit();
             this.StaffInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StaffData)).BeginInit();
+            this.NONE_board.SuspendLayout();
             this.PowerBox.SuspendLayout();
             this.SysMenu.SuspendLayout();
-            this.UserJudge.SuspendLayout();
             this.MoneyShow.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RecordShow)).BeginInit();
+            this.ReturnCost.SuspendLayout();
             this.SuspendLayout();
             // 
             // UserM
@@ -493,7 +497,6 @@
             this.CarInfo.Controls.Add(this.CarChoose);
             this.CarInfo.Controls.Add(this.StaffEditBox);
             this.CarInfo.Controls.Add(this.UserEditBox);
-            this.CarInfo.Controls.Add(this.NONE_board);
             this.CarInfo.Controls.Add(this.Signin);
             this.CarInfo.Controls.Add(this.Tourist_Label);
             this.CarInfo.Controls.Add(this.LogOut);
@@ -655,90 +658,6 @@
             this.UserChoose.Name = "UserChoose";
             this.UserChoose.Size = new System.Drawing.Size(490, 25);
             this.UserChoose.TabIndex = 3;
-            // 
-            // PowerEditBox
-            // 
-            this.PowerEditBox.Controls.Add(this.CancelChange);
-            this.PowerEditBox.Controls.Add(this.ApplyChange);
-            this.PowerEditBox.Controls.Add(this.label31);
-            this.PowerEditBox.Controls.Add(this.PowerExit);
-            this.PowerEditBox.Controls.Add(this.PowerDel);
-            this.PowerEditBox.Controls.Add(this.PowerUpdate);
-            this.PowerEditBox.Controls.Add(this.PowerAdd);
-            this.PowerEditBox.Location = new System.Drawing.Point(81, 155);
-            this.PowerEditBox.Name = "PowerEditBox";
-            this.PowerEditBox.Size = new System.Drawing.Size(176, 146);
-            this.PowerEditBox.TabIndex = 3;
-            this.PowerEditBox.Visible = false;
-            // 
-            // CancelChange
-            // 
-            this.CancelChange.Location = new System.Drawing.Point(100, 112);
-            this.CancelChange.Name = "CancelChange";
-            this.CancelChange.Size = new System.Drawing.Size(65, 26);
-            this.CancelChange.TabIndex = 7;
-            this.CancelChange.Text = "取消";
-            this.CancelChange.UseVisualStyleBackColor = true;
-            this.CancelChange.Click += new System.EventHandler(this.CancelChange_Click);
-            // 
-            // ApplyChange
-            // 
-            this.ApplyChange.Location = new System.Drawing.Point(18, 111);
-            this.ApplyChange.Name = "ApplyChange";
-            this.ApplyChange.Size = new System.Drawing.Size(65, 27);
-            this.ApplyChange.TabIndex = 7;
-            this.ApplyChange.Text = "应用";
-            this.ApplyChange.UseVisualStyleBackColor = true;
-            this.ApplyChange.Click += new System.EventHandler(this.ApplyChange_Click);
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(51, 7);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(77, 12);
-            this.label31.TabIndex = 3;
-            this.label31.Text = "管理编辑模式";
-            // 
-            // PowerExit
-            // 
-            this.PowerExit.Location = new System.Drawing.Point(100, 70);
-            this.PowerExit.Name = "PowerExit";
-            this.PowerExit.Size = new System.Drawing.Size(65, 27);
-            this.PowerExit.TabIndex = 6;
-            this.PowerExit.Text = "退出";
-            this.PowerExit.UseVisualStyleBackColor = true;
-            this.PowerExit.Click += new System.EventHandler(this.PowerExit_Click);
-            // 
-            // PowerDel
-            // 
-            this.PowerDel.Location = new System.Drawing.Point(18, 70);
-            this.PowerDel.Name = "PowerDel";
-            this.PowerDel.Size = new System.Drawing.Size(65, 27);
-            this.PowerDel.TabIndex = 5;
-            this.PowerDel.Text = "删除";
-            this.PowerDel.UseVisualStyleBackColor = true;
-            this.PowerDel.Click += new System.EventHandler(this.PowerDel_Click);
-            // 
-            // PowerUpdate
-            // 
-            this.PowerUpdate.Location = new System.Drawing.Point(100, 29);
-            this.PowerUpdate.Name = "PowerUpdate";
-            this.PowerUpdate.Size = new System.Drawing.Size(65, 27);
-            this.PowerUpdate.TabIndex = 4;
-            this.PowerUpdate.Text = "修改";
-            this.PowerUpdate.UseVisualStyleBackColor = true;
-            this.PowerUpdate.Click += new System.EventHandler(this.PowerUpdate_Click);
-            // 
-            // PowerAdd
-            // 
-            this.PowerAdd.Location = new System.Drawing.Point(18, 30);
-            this.PowerAdd.Name = "PowerAdd";
-            this.PowerAdd.Size = new System.Drawing.Size(65, 27);
-            this.PowerAdd.TabIndex = 3;
-            this.PowerAdd.Text = "添加";
-            this.PowerAdd.UseVisualStyleBackColor = true;
-            this.PowerAdd.Click += new System.EventHandler(this.PowerAdd_Click);
             // 
             // UserMailText
             // 
@@ -1128,41 +1047,6 @@
             this.UserEditCancel.UseVisualStyleBackColor = true;
             this.UserEditCancel.Click += new System.EventHandler(this.UserEditCancel_Click);
             // 
-            // NONE_board
-            // 
-            this.NONE_board.Controls.Add(this.NONE_Return);
-            this.NONE_board.Controls.Add(this.richTextBox1);
-            this.NONE_board.Location = new System.Drawing.Point(60, 161);
-            this.NONE_board.Name = "NONE_board";
-            this.NONE_board.Size = new System.Drawing.Size(178, 145);
-            this.NONE_board.TabIndex = 3;
-            this.NONE_board.Visible = false;
-            // 
-            // NONE_Return
-            // 
-            this.NONE_Return.Location = new System.Drawing.Point(55, 114);
-            this.NONE_Return.Name = "NONE_Return";
-            this.NONE_Return.Size = new System.Drawing.Size(63, 23);
-            this.NONE_Return.TabIndex = 1;
-            this.NONE_Return.Text = "返回";
-            this.NONE_Return.UseVisualStyleBackColor = true;
-            this.NONE_Return.Click += new System.EventHandler(this.NONE_Return_Click);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.Red;
-            this.richTextBox1.Location = new System.Drawing.Point(24, 19);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(140, 93);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "    您当前还不是\n     我们的会员\n只能浏览或者来店下单\n   快快加入我们吧\n   出行方便你我他";
-            // 
             // LogOut
             // 
             this.LogOut.Location = new System.Drawing.Point(28, 199);
@@ -1248,6 +1132,116 @@
             this.UserData.Size = new System.Drawing.Size(590, 333);
             this.UserData.TabIndex = 1;
             this.UserData.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.UserData_DataBindingComplete);
+            // 
+            // UserJudge
+            // 
+            this.UserJudge.Controls.Add(this.UserJName);
+            this.UserJudge.Controls.Add(this.UserPoint);
+            this.UserJudge.Controls.Add(this.AccCarJ);
+            this.UserJudge.Controls.Add(this.FixCarJ);
+            this.UserJudge.Controls.Add(this.LendJ);
+            this.UserJudge.Controls.Add(this.label100);
+            this.UserJudge.Controls.Add(this.GetUserPoint);
+            this.UserJudge.Controls.Add(this.AddToBlack);
+            this.UserJudge.Controls.Add(this.ExitPoint);
+            this.UserJudge.Controls.Add(this.label33);
+            this.UserJudge.Location = new System.Drawing.Point(96, 23);
+            this.UserJudge.Name = "UserJudge";
+            this.UserJudge.Size = new System.Drawing.Size(211, 261);
+            this.UserJudge.TabIndex = 3;
+            this.UserJudge.Visible = false;
+            // 
+            // UserJName
+            // 
+            this.UserJName.Location = new System.Drawing.Point(80, 40);
+            this.UserJName.Name = "UserJName";
+            this.UserJName.Size = new System.Drawing.Size(100, 21);
+            this.UserJName.TabIndex = 4;
+            // 
+            // UserPoint
+            // 
+            this.UserPoint.AutoSize = true;
+            this.UserPoint.Font = new System.Drawing.Font("萝莉体 第二版", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.UserPoint.Location = new System.Drawing.Point(56, 146);
+            this.UserPoint.Name = "UserPoint";
+            this.UserPoint.Size = new System.Drawing.Size(54, 27);
+            this.UserPoint.TabIndex = 10;
+            this.UserPoint.Text = "评分";
+            // 
+            // AccCarJ
+            // 
+            this.AccCarJ.AutoSize = true;
+            this.AccCarJ.Location = new System.Drawing.Point(22, 124);
+            this.AccCarJ.Name = "AccCarJ";
+            this.AccCarJ.Size = new System.Drawing.Size(77, 12);
+            this.AccCarJ.TabIndex = 9;
+            this.AccCarJ.Text = "违反交通次数";
+            // 
+            // FixCarJ
+            // 
+            this.FixCarJ.AutoSize = true;
+            this.FixCarJ.Location = new System.Drawing.Point(22, 98);
+            this.FixCarJ.Name = "FixCarJ";
+            this.FixCarJ.Size = new System.Drawing.Size(77, 12);
+            this.FixCarJ.TabIndex = 8;
+            this.FixCarJ.Text = "车辆损坏次数";
+            // 
+            // LendJ
+            // 
+            this.LendJ.AutoSize = true;
+            this.LendJ.Location = new System.Drawing.Point(22, 73);
+            this.LendJ.Name = "LendJ";
+            this.LendJ.Size = new System.Drawing.Size(53, 12);
+            this.LendJ.TabIndex = 7;
+            this.LendJ.Text = "借车次数";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(22, 45);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(41, 12);
+            this.label100.TabIndex = 4;
+            this.label100.Text = "用户名";
+            // 
+            // GetUserPoint
+            // 
+            this.GetUserPoint.Location = new System.Drawing.Point(40, 183);
+            this.GetUserPoint.Name = "GetUserPoint";
+            this.GetUserPoint.Size = new System.Drawing.Size(52, 37);
+            this.GetUserPoint.TabIndex = 6;
+            this.GetUserPoint.Text = "评价";
+            this.GetUserPoint.UseVisualStyleBackColor = true;
+            this.GetUserPoint.Click += new System.EventHandler(this.GetUserPoint_Click);
+            // 
+            // AddToBlack
+            // 
+            this.AddToBlack.Location = new System.Drawing.Point(23, 226);
+            this.AddToBlack.Name = "AddToBlack";
+            this.AddToBlack.Size = new System.Drawing.Size(160, 28);
+            this.AddToBlack.TabIndex = 5;
+            this.AddToBlack.Text = "加入黑名单";
+            this.AddToBlack.UseVisualStyleBackColor = true;
+            this.AddToBlack.Click += new System.EventHandler(this.AddToBlack_Click);
+            // 
+            // ExitPoint
+            // 
+            this.ExitPoint.Location = new System.Drawing.Point(112, 183);
+            this.ExitPoint.Name = "ExitPoint";
+            this.ExitPoint.Size = new System.Drawing.Size(52, 37);
+            this.ExitPoint.TabIndex = 4;
+            this.ExitPoint.Text = "退出";
+            this.ExitPoint.UseVisualStyleBackColor = true;
+            this.ExitPoint.Click += new System.EventHandler(this.ExitPoint_Click);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(78, 14);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(53, 12);
+            this.label33.TabIndex = 4;
+            this.label33.Text = "用户评价";
             // 
             // CarsInfo
             // 
@@ -1347,6 +1341,90 @@
             this.OrderData.Size = new System.Drawing.Size(590, 333);
             this.OrderData.TabIndex = 1;
             this.OrderData.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.OrderData_DataBindingComplete);
+            // 
+            // PowerEditBox
+            // 
+            this.PowerEditBox.Controls.Add(this.CancelChange);
+            this.PowerEditBox.Controls.Add(this.ApplyChange);
+            this.PowerEditBox.Controls.Add(this.label31);
+            this.PowerEditBox.Controls.Add(this.PowerExit);
+            this.PowerEditBox.Controls.Add(this.PowerDel);
+            this.PowerEditBox.Controls.Add(this.PowerUpdate);
+            this.PowerEditBox.Controls.Add(this.PowerAdd);
+            this.PowerEditBox.Location = new System.Drawing.Point(81, 155);
+            this.PowerEditBox.Name = "PowerEditBox";
+            this.PowerEditBox.Size = new System.Drawing.Size(176, 146);
+            this.PowerEditBox.TabIndex = 3;
+            this.PowerEditBox.Visible = false;
+            // 
+            // CancelChange
+            // 
+            this.CancelChange.Location = new System.Drawing.Point(100, 112);
+            this.CancelChange.Name = "CancelChange";
+            this.CancelChange.Size = new System.Drawing.Size(65, 26);
+            this.CancelChange.TabIndex = 7;
+            this.CancelChange.Text = "取消";
+            this.CancelChange.UseVisualStyleBackColor = true;
+            this.CancelChange.Click += new System.EventHandler(this.CancelChange_Click);
+            // 
+            // ApplyChange
+            // 
+            this.ApplyChange.Location = new System.Drawing.Point(18, 111);
+            this.ApplyChange.Name = "ApplyChange";
+            this.ApplyChange.Size = new System.Drawing.Size(65, 27);
+            this.ApplyChange.TabIndex = 7;
+            this.ApplyChange.Text = "应用";
+            this.ApplyChange.UseVisualStyleBackColor = true;
+            this.ApplyChange.Click += new System.EventHandler(this.ApplyChange_Click);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(51, 7);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(77, 12);
+            this.label31.TabIndex = 3;
+            this.label31.Text = "管理编辑模式";
+            // 
+            // PowerExit
+            // 
+            this.PowerExit.Location = new System.Drawing.Point(100, 70);
+            this.PowerExit.Name = "PowerExit";
+            this.PowerExit.Size = new System.Drawing.Size(65, 27);
+            this.PowerExit.TabIndex = 6;
+            this.PowerExit.Text = "退出";
+            this.PowerExit.UseVisualStyleBackColor = true;
+            this.PowerExit.Click += new System.EventHandler(this.PowerExit_Click);
+            // 
+            // PowerDel
+            // 
+            this.PowerDel.Location = new System.Drawing.Point(18, 70);
+            this.PowerDel.Name = "PowerDel";
+            this.PowerDel.Size = new System.Drawing.Size(65, 27);
+            this.PowerDel.TabIndex = 5;
+            this.PowerDel.Text = "删除";
+            this.PowerDel.UseVisualStyleBackColor = true;
+            this.PowerDel.Click += new System.EventHandler(this.PowerDel_Click);
+            // 
+            // PowerUpdate
+            // 
+            this.PowerUpdate.Location = new System.Drawing.Point(100, 29);
+            this.PowerUpdate.Name = "PowerUpdate";
+            this.PowerUpdate.Size = new System.Drawing.Size(65, 27);
+            this.PowerUpdate.TabIndex = 4;
+            this.PowerUpdate.Text = "修改";
+            this.PowerUpdate.UseVisualStyleBackColor = true;
+            this.PowerUpdate.Click += new System.EventHandler(this.PowerUpdate_Click);
+            // 
+            // PowerAdd
+            // 
+            this.PowerAdd.Location = new System.Drawing.Point(18, 30);
+            this.PowerAdd.Name = "PowerAdd";
+            this.PowerAdd.Size = new System.Drawing.Size(65, 27);
+            this.PowerAdd.TabIndex = 3;
+            this.PowerAdd.Text = "添加";
+            this.PowerAdd.UseVisualStyleBackColor = true;
+            this.PowerAdd.Click += new System.EventHandler(this.PowerAdd_Click);
             // 
             // OrderChoose
             // 
@@ -1712,6 +1790,41 @@
             this.UserName_Label.TabIndex = 2;
             this.UserName_Label.Text = "姓名：";
             // 
+            // NONE_board
+            // 
+            this.NONE_board.Controls.Add(this.NONE_Return);
+            this.NONE_board.Controls.Add(this.richTextBox1);
+            this.NONE_board.Location = new System.Drawing.Point(107, 88);
+            this.NONE_board.Name = "NONE_board";
+            this.NONE_board.Size = new System.Drawing.Size(178, 145);
+            this.NONE_board.TabIndex = 3;
+            this.NONE_board.Visible = false;
+            // 
+            // NONE_Return
+            // 
+            this.NONE_Return.Location = new System.Drawing.Point(55, 114);
+            this.NONE_Return.Name = "NONE_Return";
+            this.NONE_Return.Size = new System.Drawing.Size(63, 23);
+            this.NONE_Return.TabIndex = 1;
+            this.NONE_Return.Text = "返回";
+            this.NONE_Return.UseVisualStyleBackColor = true;
+            this.NONE_Return.Click += new System.EventHandler(this.NONE_Return_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.richTextBox1.Enabled = false;
+            this.richTextBox1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Red;
+            this.richTextBox1.Location = new System.Drawing.Point(24, 19);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(140, 93);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "    您当前还不是\n     我们的会员\n只能浏览或者来店下单\n   快快加入我们吧\n   出行方便你我他";
+            // 
             // PowerBox
             // 
             this.PowerBox.Controls.Add(this.SelectPower);
@@ -1852,14 +1965,14 @@
             // ReportMenuItem
             // 
             this.ReportMenuItem.Name = "ReportMenuItem";
-            this.ReportMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ReportMenuItem.Size = new System.Drawing.Size(128, 22);
             this.ReportMenuItem.Text = " 财务报表";
             this.ReportMenuItem.Click += new System.EventHandler(this.ReportMenuItem_Click);
             // 
             // UserCheck
             // 
             this.UserCheck.Name = "UserCheck";
-            this.UserCheck.Size = new System.Drawing.Size(152, 22);
+            this.UserCheck.Size = new System.Drawing.Size(128, 22);
             this.UserCheck.Text = " 用户评价";
             this.UserCheck.Click += new System.EventHandler(this.UserCheck_Click);
             // 
@@ -1884,116 +1997,6 @@
             this.HelpShowMenu.Size = new System.Drawing.Size(128, 22);
             this.HelpShowMenu.Text = " 帮助说明";
             // 
-            // UserJudge
-            // 
-            this.UserJudge.Controls.Add(this.UserJName);
-            this.UserJudge.Controls.Add(this.UserPoint);
-            this.UserJudge.Controls.Add(this.AccCarJ);
-            this.UserJudge.Controls.Add(this.FixCarJ);
-            this.UserJudge.Controls.Add(this.LendJ);
-            this.UserJudge.Controls.Add(this.label100);
-            this.UserJudge.Controls.Add(this.GetUserPoint);
-            this.UserJudge.Controls.Add(this.AddToBlack);
-            this.UserJudge.Controls.Add(this.ExitPoint);
-            this.UserJudge.Controls.Add(this.label33);
-            this.UserJudge.Location = new System.Drawing.Point(96, 23);
-            this.UserJudge.Name = "UserJudge";
-            this.UserJudge.Size = new System.Drawing.Size(211, 261);
-            this.UserJudge.TabIndex = 3;
-            this.UserJudge.Visible = false;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(78, 14);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(53, 12);
-            this.label33.TabIndex = 4;
-            this.label33.Text = "用户评价";
-            // 
-            // ExitPoint
-            // 
-            this.ExitPoint.Location = new System.Drawing.Point(112, 183);
-            this.ExitPoint.Name = "ExitPoint";
-            this.ExitPoint.Size = new System.Drawing.Size(52, 37);
-            this.ExitPoint.TabIndex = 4;
-            this.ExitPoint.Text = "退出";
-            this.ExitPoint.UseVisualStyleBackColor = true;
-            this.ExitPoint.Click += new System.EventHandler(this.ExitPoint_Click);
-            // 
-            // AddToBlack
-            // 
-            this.AddToBlack.Location = new System.Drawing.Point(23, 226);
-            this.AddToBlack.Name = "AddToBlack";
-            this.AddToBlack.Size = new System.Drawing.Size(160, 28);
-            this.AddToBlack.TabIndex = 5;
-            this.AddToBlack.Text = "加入黑名单";
-            this.AddToBlack.UseVisualStyleBackColor = true;
-            this.AddToBlack.Click += new System.EventHandler(this.AddToBlack_Click);
-            // 
-            // GetUserPoint
-            // 
-            this.GetUserPoint.Location = new System.Drawing.Point(40, 183);
-            this.GetUserPoint.Name = "GetUserPoint";
-            this.GetUserPoint.Size = new System.Drawing.Size(52, 37);
-            this.GetUserPoint.TabIndex = 6;
-            this.GetUserPoint.Text = "评价";
-            this.GetUserPoint.UseVisualStyleBackColor = true;
-            this.GetUserPoint.Click += new System.EventHandler(this.GetUserPoint_Click);
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(22, 45);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(41, 12);
-            this.label100.TabIndex = 4;
-            this.label100.Text = "用户名";
-            // 
-            // LendJ
-            // 
-            this.LendJ.AutoSize = true;
-            this.LendJ.Location = new System.Drawing.Point(22, 73);
-            this.LendJ.Name = "LendJ";
-            this.LendJ.Size = new System.Drawing.Size(53, 12);
-            this.LendJ.TabIndex = 7;
-            this.LendJ.Text = "借车次数";
-            // 
-            // FixCarJ
-            // 
-            this.FixCarJ.AutoSize = true;
-            this.FixCarJ.Location = new System.Drawing.Point(22, 98);
-            this.FixCarJ.Name = "FixCarJ";
-            this.FixCarJ.Size = new System.Drawing.Size(77, 12);
-            this.FixCarJ.TabIndex = 8;
-            this.FixCarJ.Text = "车辆损坏次数";
-            // 
-            // AccCarJ
-            // 
-            this.AccCarJ.AutoSize = true;
-            this.AccCarJ.Location = new System.Drawing.Point(22, 124);
-            this.AccCarJ.Name = "AccCarJ";
-            this.AccCarJ.Size = new System.Drawing.Size(77, 12);
-            this.AccCarJ.TabIndex = 9;
-            this.AccCarJ.Text = "违反交通次数";
-            // 
-            // UserPoint
-            // 
-            this.UserPoint.AutoSize = true;
-            this.UserPoint.Font = new System.Drawing.Font("萝莉体 第二版", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.UserPoint.Location = new System.Drawing.Point(56, 146);
-            this.UserPoint.Name = "UserPoint";
-            this.UserPoint.Size = new System.Drawing.Size(54, 27);
-            this.UserPoint.TabIndex = 10;
-            this.UserPoint.Text = "评分";
-            // 
-            // UserJName
-            // 
-            this.UserJName.Location = new System.Drawing.Point(80, 40);
-            this.UserJName.Name = "UserJName";
-            this.UserJName.Size = new System.Drawing.Size(100, 21);
-            this.UserJName.TabIndex = 4;
-            // 
             // MoneyShow
             // 
             this.MoneyShow.Controls.Add(this.AllMoney);
@@ -2005,29 +2008,75 @@
             this.MoneyShow.Controls.Add(this.panel1);
             this.MoneyShow.Controls.Add(this.NewTimer);
             this.MoneyShow.Controls.Add(this.OldTimer);
-            this.MoneyShow.Location = new System.Drawing.Point(220, 31);
+            this.MoneyShow.Location = new System.Drawing.Point(219, 31);
             this.MoneyShow.Name = "MoneyShow";
             this.MoneyShow.Size = new System.Drawing.Size(610, 437);
             this.MoneyShow.TabIndex = 3;
             this.MoneyShow.Visible = false;
             // 
-            // OldTimer
+            // AllMoney
             // 
-            this.OldTimer.Location = new System.Drawing.Point(72, 46);
-            this.OldTimer.Name = "OldTimer";
-            this.OldTimer.Size = new System.Drawing.Size(200, 21);
-            this.OldTimer.TabIndex = 0;
+            this.AllMoney.AutoSize = true;
+            this.AllMoney.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.AllMoney.Location = new System.Drawing.Point(53, 398);
+            this.AllMoney.Name = "AllMoney";
+            this.AllMoney.Size = new System.Drawing.Size(120, 21);
+            this.AllMoney.TabIndex = 9;
+            this.AllMoney.Text = "总计收益：";
             // 
-            // NewTimer
+            // label36
             // 
-            this.NewTimer.Location = new System.Drawing.Point(369, 46);
-            this.NewTimer.Name = "NewTimer";
-            this.NewTimer.Size = new System.Drawing.Size(200, 21);
-            this.NewTimer.TabIndex = 1;
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(13, 52);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(53, 12);
+            this.label36.TabIndex = 8;
+            this.label36.Text = "日期上限";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(307, 52);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(53, 12);
+            this.label35.TabIndex = 7;
+            this.label35.Text = "日期下限";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label34.Location = new System.Drawing.Point(251, 11);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(98, 21);
+            this.label34.TabIndex = 6;
+            this.label34.Text = "财务报表";
+            // 
+            // MakeTable
+            // 
+            this.MakeTable.Location = new System.Drawing.Point(427, 387);
+            this.MakeTable.Name = "MakeTable";
+            this.MakeTable.Size = new System.Drawing.Size(75, 41);
+            this.MakeTable.TabIndex = 5;
+            this.MakeTable.Text = "生成报表";
+            this.MakeTable.UseVisualStyleBackColor = true;
+            this.MakeTable.Click += new System.EventHandler(this.MakeTable_Click);
+            // 
+            // CloseTable
+            // 
+            this.CloseTable.Location = new System.Drawing.Point(521, 387);
+            this.CloseTable.Name = "CloseTable";
+            this.CloseTable.Size = new System.Drawing.Size(75, 41);
+            this.CloseTable.TabIndex = 4;
+            this.CloseTable.Text = "关闭";
+            this.CloseTable.UseVisualStyleBackColor = true;
+            this.CloseTable.Click += new System.EventHandler(this.CloseTable_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.RecordShow);
+            this.panel1.Controls.Add(this.ReturnCost);
+            this.panel1.Controls.Add(this.NONE_board);
             this.panel1.Location = new System.Drawing.Point(12, 86);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(584, 292);
@@ -2069,64 +2118,54 @@
             this.RecordShow.RowTemplate.Height = 23;
             this.RecordShow.Size = new System.Drawing.Size(584, 292);
             this.RecordShow.TabIndex = 2;
+            this.RecordShow.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.RecordShow_DataBindingComplete);
             // 
-            // CloseTable
+            // ReturnCost
             // 
-            this.CloseTable.Location = new System.Drawing.Point(521, 387);
-            this.CloseTable.Name = "CloseTable";
-            this.CloseTable.Size = new System.Drawing.Size(75, 41);
-            this.CloseTable.TabIndex = 4;
-            this.CloseTable.Text = "关闭";
-            this.CloseTable.UseVisualStyleBackColor = true;
-            this.CloseTable.Click += new System.EventHandler(this.CloseTable_Click);
+            this.ReturnCost.Controls.Add(this.ReturnCostSure);
+            this.ReturnCost.Controls.Add(this.ReturnCostBoard);
+            this.ReturnCost.Location = new System.Drawing.Point(85, 109);
+            this.ReturnCost.Name = "ReturnCost";
+            this.ReturnCost.Size = new System.Drawing.Size(178, 146);
+            this.ReturnCost.TabIndex = 10;
             // 
-            // MakeTable
+            // ReturnCostSure
             // 
-            this.MakeTable.Location = new System.Drawing.Point(427, 387);
-            this.MakeTable.Name = "MakeTable";
-            this.MakeTable.Size = new System.Drawing.Size(75, 41);
-            this.MakeTable.TabIndex = 5;
-            this.MakeTable.Text = "生成报表";
-            this.MakeTable.UseVisualStyleBackColor = true;
-            this.MakeTable.Click += new System.EventHandler(this.MakeTable_Click);
+            this.ReturnCostSure.Location = new System.Drawing.Point(51, 106);
+            this.ReturnCostSure.Name = "ReturnCostSure";
+            this.ReturnCostSure.Size = new System.Drawing.Size(75, 32);
+            this.ReturnCostSure.TabIndex = 10;
+            this.ReturnCostSure.Text = "确定";
+            this.ReturnCostSure.UseVisualStyleBackColor = true;
+            this.ReturnCostSure.Click += new System.EventHandler(this.ReturnCostSure_Click);
             // 
-            // label34
+            // ReturnCostBoard
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label34.Location = new System.Drawing.Point(251, 11);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(98, 21);
-            this.label34.TabIndex = 6;
-            this.label34.Text = "财务报表";
+            this.ReturnCostBoard.BackColor = System.Drawing.SystemColors.Control;
+            this.ReturnCostBoard.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ReturnCostBoard.Enabled = false;
+            this.ReturnCostBoard.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ReturnCostBoard.ForeColor = System.Drawing.Color.Red;
+            this.ReturnCostBoard.Location = new System.Drawing.Point(19, 20);
+            this.ReturnCostBoard.Name = "ReturnCostBoard";
+            this.ReturnCostBoard.ReadOnly = true;
+            this.ReturnCostBoard.Size = new System.Drawing.Size(140, 75);
+            this.ReturnCostBoard.TabIndex = 1;
+            this.ReturnCostBoard.Text = "";
             // 
-            // label35
+            // NewTimer
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(307, 52);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(53, 12);
-            this.label35.TabIndex = 7;
-            this.label35.Text = "日期下限";
+            this.NewTimer.Location = new System.Drawing.Point(369, 46);
+            this.NewTimer.Name = "NewTimer";
+            this.NewTimer.Size = new System.Drawing.Size(200, 21);
+            this.NewTimer.TabIndex = 1;
             // 
-            // label36
+            // OldTimer
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(13, 52);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(53, 12);
-            this.label36.TabIndex = 8;
-            this.label36.Text = "日期上限";
-            // 
-            // AllMoney
-            // 
-            this.AllMoney.AutoSize = true;
-            this.AllMoney.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.AllMoney.Location = new System.Drawing.Point(53, 398);
-            this.AllMoney.Name = "AllMoney";
-            this.AllMoney.Size = new System.Drawing.Size(120, 21);
-            this.AllMoney.TabIndex = 9;
-            this.AllMoney.Text = "总计收益：";
+            this.OldTimer.Location = new System.Drawing.Point(72, 46);
+            this.OldTimer.Name = "OldTimer";
+            this.OldTimer.Size = new System.Drawing.Size(200, 21);
+            this.OldTimer.TabIndex = 0;
             // 
             // CarMain
             // 
@@ -2159,8 +2198,6 @@
             this.CarsChoose.PerformLayout();
             this.UserChoose.ResumeLayout(false);
             this.UserChoose.PerformLayout();
-            this.PowerEditBox.ResumeLayout(false);
-            this.PowerEditBox.PerformLayout();
             this.RecordChoose.ResumeLayout(false);
             this.RecordChoose.PerformLayout();
             this.AccChoose.ResumeLayout(false);
@@ -2171,13 +2208,16 @@
             this.StaffEditBox.PerformLayout();
             this.UserEditBox.ResumeLayout(false);
             this.UserEditBox.PerformLayout();
-            this.NONE_board.ResumeLayout(false);
             this.UserInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.UserData)).EndInit();
+            this.UserJudge.ResumeLayout(false);
+            this.UserJudge.PerformLayout();
             this.CarsInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CarsData)).EndInit();
             this.OrderInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.OrderData)).EndInit();
+            this.PowerEditBox.ResumeLayout(false);
+            this.PowerEditBox.PerformLayout();
             this.OrderChoose.ResumeLayout(false);
             this.OrderChoose.PerformLayout();
             this.FixChoose.ResumeLayout(false);
@@ -2191,16 +2231,16 @@
             this.StaffInfo.ResumeLayout(false);
             this.StaffInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StaffData)).EndInit();
+            this.NONE_board.ResumeLayout(false);
             this.PowerBox.ResumeLayout(false);
             this.PowerBox.PerformLayout();
             this.SysMenu.ResumeLayout(false);
             this.SysMenu.PerformLayout();
-            this.UserJudge.ResumeLayout(false);
-            this.UserJudge.PerformLayout();
             this.MoneyShow.ResumeLayout(false);
             this.MoneyShow.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.RecordShow)).EndInit();
+            this.ReturnCost.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2375,6 +2415,9 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label AllMoney;
+        private System.Windows.Forms.Panel ReturnCost;
+        private System.Windows.Forms.RichTextBox ReturnCostBoard;
+        private System.Windows.Forms.Button ReturnCostSure;
 
     }
 }

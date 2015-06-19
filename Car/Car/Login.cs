@@ -38,8 +38,8 @@ namespace Car
         {
             ID_LEVEL.Enabled = false;
             Cancel.Enabled = false;
-            //UserBox.Text = "zsf"; //"admin";// 
-            //PassBox.Text = "123456";//"admin";// 
+            //UserBox.Text = "admin";// "zsf"; //
+            //PassBox.Text = "admin";// "123456";//
             //ID_LEVEL.SelectedIndex = 1;
             if(UserBox.Text=="") {
                 MessageBox.Show("User is NULL");

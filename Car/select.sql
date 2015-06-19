@@ -5,24 +5,12 @@ select * from cars;
 select * from carsinfo;
 select * from Orders;
 
-select (cars.Deposit - records.Cost) as returncost
-from records, cars 
-where cars.cid = records.cid and records.date = (select max(date) from records);
-
-select * from records;
-select * from fixlist;
-select * from accident;
+select * from fixlist where fix=null;
 
 select * from cars 
 where price>=100 and price <=150;
 
 select fixlist.* from fixlist, records;
-
-select (cars.Deposit - records.Cost) as returncost
-from records, cars
-where cars.cid = records.cid
-group by date 
-having records.date = max(records.date);
 
 select *
 from carsinfo;

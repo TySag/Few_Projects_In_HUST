@@ -234,6 +234,7 @@ namespace Car
 
         void BodyChange_none()
         {
+            ClearPower();
             ClearUser_Mod();
             ClearStaff_Mod();
             AddNone_Mod();
@@ -382,7 +383,6 @@ namespace Car
         {
             if (MessageBox.Show("确定退出吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-
                 BodyChange_none();
             }
         }
@@ -734,6 +734,18 @@ namespace Car
 
         private void MakeOrderSure_Click(object sender, EventArgs e)
         {
+            string sqlword = "select blacklabel from users where uid = " + user.Uid;
+            try
+            {
+                MySqlDataReader sqlR = sql.ExecuteReader(sqlword);
+                sqlR.Read();
+                user.Blacklabel = (bool)sqlR[0];
+            }
+            catch
+            {
+                MessageBox.Show("检查用户标签失败 ");
+                return;
+            }
             if (user.Blacklabel)
             {
                 MessageBox.Show("您已经被加入黑名单,请联系客服解决问题");
@@ -746,7 +758,8 @@ namespace Car
             }
             if (GetCarState(MakeOrderCarID.Text) != "wait")
             {
-                MessageBox.Show("该车状态无法出行 "); ;
+                MessageBox.Show("该车状态无法出行 ");
+                return;
             }
             bool s = InsertIntoOrder(MakeOrderCarID.Text, MakeOrderDay.Text);
             if (s)
@@ -796,7 +809,8 @@ namespace Car
                 MySqlDataReader sqlR = sql.ExecuteReader(Ono);
                 if (sqlR.Read())
                 {
-                    Ono = (Convert.ToInt64(sqlR[0]) + 1).ToString();
+                    if (sqlR[0].ToString() == "") Ono = "1";
+                    else Ono = (Convert.ToInt64(sqlR[0]) + 1).ToString();
                 }
                 else
                 {
@@ -820,11 +834,11 @@ namespace Car
             sqlword += addstring(Cid) + ',';
             sqlword += addstring(user.Uid) + ',';
             if (days == "") ;
-            else sqlword += addstring(days) + ',';
-            sqlword += "now())";
+            else sqlword += days + ',';
+            sqlword += "now(), 0)";
             try{
                 sql.ExecuteSql(sqlword);
-
+                Updata();
             }
             catch
             {
@@ -925,15 +939,15 @@ namespace Car
                             string[] d = Deposit.Split('-');
                             Convert.ToInt64(d[0]);
                             Convert.ToInt64(d[1]);
-                            sqlword += "price >= " + d[0];
-                            sqlword += " and price <=" + d[1];
+                            sqlword += "Deposit >= " + d[0];
+                            sqlword += " and Deposit <=" + d[1];
                             has = true;
                         }
                         else
                         {
                             if (has) sqlword += " and ";
-                            Convert.ToInt64(Price);
-                            sqlword += "price = " + Deposit;
+                            Convert.ToInt64(Deposit);
+                            sqlword += "Deposit = " + Deposit;
                             has = true;
                         }
                     }
@@ -981,13 +995,13 @@ namespace Car
                 if (name != "")
                 {
                     if (has) sqlword += " and ";
-                    sqlword += " and name = " + addstring(name);
+                    sqlword += "name = " + addstring(name);
                     has = true;
                 }
                 if (mail != "")
                 {
                     if (has) sqlword += " and ";
-                    sqlword += " and mail = " + addstring(mail);
+                    sqlword += "mail = " + addstring(mail);
                 }
             }
             try
@@ -1273,9 +1287,18 @@ namespace Car
 
         private void PowerExit_Click(object sender, EventArgs e)
         {
+            string sqlword;
             if (MessageBox.Show("确定退出编辑模式吗？", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {  
                 PowerEditBox.Visible = false;
+                Updata();
+            }
+            else
+            {
+                sqlword = "select * from fixlist where fid = null";
+                FixData.DataSource = sql.ExecuteDt(sqlword);
+                sqlword = "select * from accident where aid = null";
+                AccData.DataSource = sql.ExecuteDt(sqlword);
             }
             CarData.AllowUserToAddRows = false;
             CarData.AllowUserToDeleteRows = false;
@@ -1302,7 +1325,6 @@ namespace Car
             OrderData.RowHeadersVisible = false;
             FixData.RowHeadersVisible = false;
             AccData.RowHeadersVisible = false;
-            Updata();
         }
 
         private void EditMenuItem_Click(object sender, EventArgs e)
@@ -1366,9 +1388,9 @@ namespace Car
             AccData.RowHeadersVisible = true;
             //update the add word;
             string sqlword;
-            sqlword = "select * from fixlist where fid = null";
+            sqlword = "select * from fixlist";
             FixData.DataSource = sql.ExecuteDt(sqlword);
-            sqlword = "select * from accident where aid = null";
+            sqlword = "select * from accident";
             AccData.DataSource = sql.ExecuteDt(sqlword);
         }
 
@@ -1399,6 +1421,25 @@ namespace Car
                     case "Record":
                         sqlword = "select * from records";
                         sql.SyncSql((DataTable)RecordData.DataSource, sqlword);
+                        ReturnCost.Location = new Point(6, 16);
+                        PowerBox.Controls.Add(ReturnCost);
+                        ReturnCost.Visible = true;
+                        ReturnCost.BringToFront();
+                        sqlword = "select (cars.Deposit - records.Cost) as returncost from records, cars where cars.cid = records.cid and records.date = (select max(date) from records)";
+                        MySqlDataReader sqlR = sql.ExecuteReader(sqlword);
+                        sqlR.Read();
+                        double cost = Convert.ToDouble(sqlR[0].ToString());
+                        ReturnCostBoard.SelectAll();
+                        ReturnCostBoard.SelectionAlignment = HorizontalAlignment.Center;
+                        if (cost < 0)
+                        {
+                            ReturnCostBoard.Text = "客户海英支付 " + (-cost).ToString();
+                        }
+                        else
+                        {
+                            ReturnCostBoard.Text = "应还付款 " + cost.ToString();
+                        }
+                        //
                         break;
                     case "FixInfo":
                         sqlword = "select * from fixlist";
@@ -1417,11 +1458,20 @@ namespace Car
                 MessageBox.Show("更新失败， 请重试");
             }
             Updata();
+            sqlword = "select * from fixlist";
+            FixData.DataSource = sql.ExecuteDt(sqlword);
+            sqlword = "select * from accident";
+            AccData.DataSource = sql.ExecuteDt(sqlword);
         }
 
         private void CancelChange_Click(object sender, EventArgs e)
         {
+            string sqlword;
             Updata();
+            sqlword = "select * from fixlist";
+            FixData.DataSource = sql.ExecuteDt(sqlword);
+            sqlword = "select * from accident";
+            AccData.DataSource = sql.ExecuteDt(sqlword);
         }
         void Updata(){
             CarData.DataSource = SelectCar(CarNameText.Text, CarBrandText.Text);//sql.ExecuteDt(sqlword);
@@ -1443,7 +1493,7 @@ namespace Car
 
         private void UserCheck_Click(object sender, EventArgs e)
         {
-            UserJudge.Location = new Point(2, 18);
+            UserJudge.Location = new Point(5, 18);
             this.Controls.Add(UserJudge);
             UserJudge.BringToFront();
             UserJudge.Visible = true;
@@ -1469,7 +1519,7 @@ namespace Car
                 sqlR.Read();
                 FixCarJ.Text = "车辆损坏次数 : " + sqlR[0].ToString();
                 Fix = Convert.ToDouble(sqlR[0].ToString());
-                sqlword = "select count(aid) from accident, records where accident.aid = records.rid and records.uid = " + addstring(UserJName.Text);
+                sqlword = "select count(aid) from accident, records where accident.rid = records.rid and records.uid = " + addstring(UserJName.Text);
                 sqlR = sql.ExecuteReader(sqlword);
                 sqlR.Read();
                 AccCarJ.Text = "违反交通次数 : " + sqlR[0].ToString();
@@ -1554,5 +1604,46 @@ namespace Car
 
         }
     
+        public void ClearPower(){
+            MoneyShow.Visible = false;
+            PowerEditBox.Visible = false;
+            CarData.AllowUserToAddRows = false;
+            CarData.AllowUserToDeleteRows = false;
+            CarData.ReadOnly = true;
+            CarsData.AllowUserToAddRows = false;
+            CarsData.AllowUserToDeleteRows = false;
+            CarsData.ReadOnly = true;
+            UserData.AllowUserToAddRows = false;
+            UserData.AllowUserToDeleteRows = false;
+            UserData.ReadOnly = true;
+            RecordData.AllowUserToAddRows = false;
+            RecordData.AllowUserToDeleteRows = false;
+            RecordData.ReadOnly = true;
+            OrderData.ReadOnly = true;
+            OrderData.AllowUserToDeleteRows = false;
+            FixData.AllowUserToAddRows = false;
+            FixData.ReadOnly = true;
+            AccData.AllowUserToAddRows = false;
+            AccData.ReadOnly = true;
+            CarData.RowHeadersVisible = false;
+            RecordData.RowHeadersVisible = false;
+            UserData.RowHeadersVisible = false;
+            CarsData.RowHeadersVisible = false;
+            OrderData.RowHeadersVisible = false;
+            FixData.RowHeadersVisible = false;
+            AccData.RowHeadersVisible = false;
+            MakeOrderCancel_Click(null,null);
+            CancelOrderCancel_Click(null, null);
+        }
+
+        private void RecordShow_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            RecordShow.ClearSelection();
+        }
+
+        private void ReturnCostSure_Click(object sender, EventArgs e)
+        {
+            ReturnCost.Visible = false;
+        }
     }
 }
