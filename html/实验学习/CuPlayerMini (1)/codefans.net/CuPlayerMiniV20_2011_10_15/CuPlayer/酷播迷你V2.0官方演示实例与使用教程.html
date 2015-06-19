@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>酷播迷你(CuPlayerMini)V2.0官方使用教程与示例</title>
+<script type="text/javascript" src="Images/swfobject.js"></script>
+<style type="text/css">
+<!--
+body {margin:0; padding:20px;  margin-top:0px;font-size:12px; color:#313131;text-align: left; font-family:"宋体",Verdana, Arial, Helvetica, sans-serif; background:white; }
+div,ul,li,ol,dl,dt,dd,form,img,p{margin: 0; padding: 0; border: 0; }
+p{line-height:24px; }
+li{list-style-type:none;}
+h1,h4,h5,h6{margin: 0; padding: 0; font-size:14px;font-family:Verdana, Arial, Helvetica, sans-serif,"宋体"; }
+/* __link */
+a {color: #313131; text-decoration:none;}
+a:link {color: #313131;text-decoration:none;}
+a:visited {color: #313131;text-decoration:none;}
+a:hover {color:red; text-decoration:underline;}
+a:active {color: #313131;}
+.mark{color:#FF5A15;}
+.blue{color:blue;}
+.green{color:green;}
+.red{color:red;}
+.cGray,a.cGray:link,a.cGray:visited{ color:#6D6359; }
+.cOrange2,a.cOrange2:link,a.cOrange2:visited{ color:#ce0400; }
+.cOrange3,a.cOrange3:link,a.cOrange3:visited{ color:#ce0400;text-decoration:underline; }
+a.cOrange3:hover{  color:#6D6359; }
+.f12 {font-size:12px;}
+.cGreen2,a.cGreen2:link,a.cGreen2:visited{ color:#336600; }
+.en {font-family:Verdana, Arial, Helvetica, sans-serif,"宋体"; }
+fieldset{border:1px #cccccc solid;padding:10px;margin-bottom:10px;display:block; font-family:Verdana, Arial, Helvetica, sans-serif;line-height:24px;}
+fieldset dl dt { line-height:22px;font-weight:bold; display:inline;}
+fieldset dl dd { line-height:22px; display:inline;}
+-->
+</style>
+</head>
+<body>
+<h1 style="font-size:30px;">酷播迷你(CuPlayerMiniV2.0)演示实例</h1>
+<fieldset>
+<legend>
+<h1>CuPlayerMiniV2.0 灰色淡雅 演示1 </h1>
+</legend>
+<div id="CuPlayer"  style="margin-top:20px;"> <strong>酷播迷你(CuPlayerMiniV2.0) 提示：你的Flash Player版本过低，请<a href="http://www.CuPlayer.com/" >点此进行播放器升级</a>！</strong> </div>
+</fieldset>
+<fieldset>
+<legend>
+<h1>CuPlayerMiniV2.0 经典黑 演示2 </h1>
+</legend>
+<div id="CuPlayer2" style="margin-top:20px;"> <strong>酷播迷你(CuPlayerMiniV2.0) 提示：你的Flash Player版本过低，请<a href="http://www.CuPlayer.com/" >点此进行播放器升级</a>！</strong> </div>
+</fieldset>
+<fieldset>
+<legend>
+<h1>超级小屏(宽度仅为160px) 演示3 </h1>
+</legend>
+<div id="CuPlayer3" style="margin-top:20px;"> <strong>酷播迷你(CuPlayerMiniV2.0) 提示：你的Flash Player版本过低，请<a href="http://www.CuPlayer.com/" >点此进行播放器升级</a>！</strong> </div>
+</fieldset>
+<h1 style="font-size:30px; margin-top:20px;">酷播迷你(CuPlayerMiniV2.0)使用教程</h1>
+
+<fieldset>
+<legend>
+<h1>CuPlayerMiniV2.0 参数说明 </h1>
+</legend>
+<dl>
+  <dt>SWFObject引用播放器：</dt>
+  <dd><span class="green">var so = new SWFObject("Images/CuPlayerMiniV10_Gray_S.swf","CuPlayer","476","300","9","#000000");</span> <br/>// 说明：①<span class="mark">SWFObject</span>为用于在HTML中插入Flash的独立JavaScript模块；②<span class="mark">Images/CuPlayerMiniV10_Gray_S.swf</span>为播放器文件；③<span class="mark">476</span>和<span class="mark">300</span>为宽度和高度；④<span class="mark">9</span>为版本号。</dd>
+  <dt>allowfullscreen：</dt>
+  <dd><span class="mark">true</span>(false) 此为是否允许全屏的参数；</dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerFile：</dt>
+  <dd>http://www.CuPlayer.com/flv/yourfile.flv //视频地址；相对地址/绝对地址均可 </dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerImage：</dt>
+  <dd>Images/flashChangfa2.jpg //视频略缩图 </dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerShowImage：</dt>
+  <dd><span class="mark">true</span>(false) </dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerWidth：</dt>
+  <dd ><span class="mark">476</span>//宽度设置</dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerHeight：</dt>
+  <dd ><span class="mark">300</span>//高度设置</dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerAutoPlay：</dt>
+  <dd><span class="mark">true</span>(false) //是否自动播放</dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerAutoRepeat：</dt>
+  <dd><span class="mark">true</span>(false) //是否重复播放</dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerShowControl：</dt>
+  <dd><span class="mark">true</span>(false) //是否显示控制条</dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerAutoHideControl：</dt>
+  <dd><span class="mark">false</span>(true) //是否自动隐藏控制条</dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerAutoHideTime：</dt>
+  <dd ><span class="mark">3</span>//自动隐藏控制条时间(秒)</dd>
+  </dl>
+  <dl>
+  <dt>CuPlayerVolume：</dt>
+  <dd ><span class="mark">75</span>//音量大小(默认75)</dd>
+  
+</dl>
+</fieldset>
+<fieldset>
+<legend>
+<h1>使用方式(1)：</h1>
+</legend>
+<div class="content">
+  <h5 ><span class="green">第一步：请将从 <a href="http://www.cuplayer.com/cu/download.html" target="_blank" class="cOrange3">http://www.cuplayer.com/cu/download.html</a> 下载的rar压缩包解压，然后将解压后的CuPlayer整个目录上传到网站根目录，上传完成后，你即可通过以下任何一个地址测试上传文件是否正常：<br />
+  </span>
+  <span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/Index.html</span><br />
+<span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/CuPlayerMiniV20_Gray_Demo1.html</span><br />
+<span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/CuPlayerMiniV20_Black_Demo2.html</span></h5>
+		 
+		  <h5 class="green">第二步：如果用以上网址可以正常播放了，再复制以下代码到你网站中任何要添加播放器的页面中；</h5>
+		  <div id="examplerun">
+<textarea cols="95" rows="13" id="code2"  name="89525.com">
+<!--酷播迷你 CuPlayerMiniV2.0 代码开始-->
+<script type="text/javascript" src="/CuPlayer/Images/swfobject.js"></script>
+<div id="CuPlayer" >
+<strong>酷播迷你(CuPlayerMiniV2.0) 提示：你的Flash Player版本过低，请<a href="http://www.CuPlayer.com/" >点此进行播放器升级</a>！</strong>
+</div>
+<script type="text/javascript">
+var so = new SWFObject("/CuPlayer/CuPlayerMiniV20_Black_S.swf","CuPlayer","476","300","9","#000000");
+so.addParam("allowfullscreen","true");
+so.addParam("allowscriptaccess","always");
+so.addParam("wmode","opaque");
+so.addParam("quality","high");
+so.addParam("salign","lt");
+so.addVariable("CuPlayerFile","http://vkpws.video.qq.com/flv/47/189/7EJ4HYU2V3r.flv");
+so.addVariable("CuPlayerImage","/CuPlayer/Images/flashChangfa2.jpg");
+so.addVariable("CuPlayerShowImage","true");
+so.addVariable("CuPlayerWidth","476");
+so.addVariable("CuPlayerHeight","300");
+so.addVariable("CuPlayerAutoPlay","false");
+so.addVariable("CuPlayerAutoRepeat","true");
+so.addVariable("CuPlayerShowControl","true");
+so.addVariable("CuPlayerAutoHideControl","false");
+so.addVariable("CuPlayerAutoHideTime","6");
+so.addVariable("CuPlayerVolume","80");
+so.write("CuPlayer");	
+</script>
+<!--酷播迷你 CuPlayerMiniV2.0 代码结束-->
+</textarea>
+<p><button type="button" onclick="copy_clip(document.getElementById('code2').value)">复制代码</button></p>
+<p>代码参考1：灰色淡雅－－－<a href="CuPlayerMiniV20_Gray_Demo1.html" target="_blank" class="cOrange3">CuPlayerMiniV20_Gray_Demo1.html</a></p>
+<p>代码参考2：经典黑－－－<a href="CuPlayerMiniV20_Black_Demo2.html" target="_blank" class="cOrange3">CuPlayerMiniV20_Black_Demo2.html</a></p>
+<h5 class="green">第三步：至此，安装已经完成，你就可以修改代码中视频地址，视频略缩图等参数，达到你想要的效果。</h5>
+<h5 class="green">最后提示一下：在更换视频地址，视频参数时，强烈推荐使用以"/"开头的根地址，请不要使用相对地址。</h5>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+<h1>酷播说明：</h1>
+</legend>
+<p>1.酷播迷你(CuPlayerMini)V2.0免费版下载：<a href="http://www.cuplayer.com/cu/download.html" target="_blank" class="cOrange3">http://www.cuplayer.com/cu/download.html</a></p>
+<p>2.使用时，可以调用绝对地址，也可以使用相对地址，但对于不了解相对路地址的朋友，请用绝对地址。</p>
+</fieldset>
+<p style="margin-top:15px;" class="en">酷播 <a href="http://www.CuPlayer.com" target="_blank"><strong>www.CuPlayer.com</strong></a> / 让传播更生动 2010-2012 (C) All Rights Reserved.</p>
+</body>
+</html>
+<script type="text/javascript">
+var so = new SWFObject("CuPlayerMiniV20_Black_S.swf","CuPlayer","350","220","9","#000000");
+so.addParam("allowfullscreen","true");
+so.addParam("allowscriptaccess","always");
+so.addParam("wmode","opaque");
+so.addParam("quality","high");
+so.addParam("salign","lt");
+so.addVariable("CuPlayerFile","http://vkpws.video.qq.com/flv/47/189/7EJ4HYU2V3r.flv");
+so.addVariable("CuPlayerImage","Images/flashChangfa2.jpg");
+so.addVariable("CuPlayerShowImage","true");
+so.addVariable("CuPlayerWidth","350");
+so.addVariable("CuPlayerHeight","220");
+so.addVariable("CuPlayerAutoPlay","false");
+so.addVariable("CuPlayerAutoRepeat","false");
+so.addVariable("CuPlayerShowControl","true");
+so.addVariable("CuPlayerAutoHideControl","false");
+so.addVariable("CuPlayerAutoHideTime","6");
+so.addVariable("CuPlayerVolume","80");
+so.write("CuPlayer");	
+
+var so2 = new SWFObject("CuPlayerMiniV20_Gray_S.swf","CuPlayer","350","220","9","#000000");
+so2.addParam("allowfullscreen","true");
+so2.addParam("allowscriptaccess","always");
+so2.addParam("wmode","opaque");
+so2.addParam("quality","high");
+so2.addParam("salign","lt");
+so2.addVariable("CuPlayerFile","http://vkpws.video.qq.com/flv/47/189/7EJ4HYU2V3r.flv");
+so2.addVariable("CuPlayerImage","Images/flashChangfa2.jpg");
+so2.addVariable("CuPlayerShowImage","true");
+so2.addVariable("CuPlayerWidth","350");
+so2.addVariable("CuPlayerHeight","220");
+so2.addVariable("CuPlayerAutoPlay","false");
+so2.addVariable("CuPlayerAutoRepeat","false");
+so2.addVariable("CuPlayerShowControl","true");
+so2.addVariable("CuPlayerAutoHideControl","false");
+so2.addVariable("CuPlayerAutoHideTime","6");
+so2.addVariable("CuPlayerVolume","80");
+so2.write("CuPlayer2");	
+
+var so3 = new SWFObject("CuPlayerMiniV20_Black_S.swf","CuPlayer","160","120","9","#000000");
+so3.addParam("allowfullscreen","true");
+so3.addParam("allowscriptaccess","always");
+so3.addParam("wmode","opaque");
+so3.addParam("quality","high");
+so3.addParam("salign","lt");
+so3.addVariable("CuPlayerFile","http://vkpws.video.qq.com/flv/47/189/7EJ4HYU2V3r.flv");
+so3.addVariable("CuPlayerImage","Images/flashChangfa2.jpg");
+so3.addVariable("CuPlayerShowImage","true");
+so3.addVariable("CuPlayerWidth","160");
+so3.addVariable("CuPlayerHeight","120");
+so3.addVariable("CuPlayerAutoPlay","false");
+so3.addVariable("CuPlayerAutoRepeat","false");
+so3.addVariable("CuPlayerShowControl","true");
+so3.addVariable("CuPlayerAutoHideControl","false");
+so3.addVariable("CuPlayerAutoHideTime","6");
+so3.addVariable("CuPlayerVolume","80");
+so3.write("CuPlayer3");	
+</script>
+<script type="text/javascript">
+// <![CDATA[
+function copy_clip(copy){ 
+if (window.clipboardData){ 
+window.clipboardData.setData("Text", copy);}
+else if (window.netscape){
+netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');
+var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+if (!clip) return;
+var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+if (!trans) return;
+trans.addDataFlavor('text/unicode');
+var str = new Object();
+var len = new Object();
+var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+var copytext=copy;
+str.data=copytext;
+trans.setTransferData("text/unicode",str,copytext.length*2);
+var clipid=Components.interfaces.nsIClipboard;
+if (!clip) return false;
+clip.setData(trans,null,clipid.kGlobalClipboard);}
+alert("已复制到剪贴板")
+return false;
+;}
+
+// ]]>
+</script>

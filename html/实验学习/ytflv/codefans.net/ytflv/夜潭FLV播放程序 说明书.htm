@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>使用说明书</title>
+<base target="_blank">
+</head>
+
+<body>
+
+<p><font face="宋体" size="2">简介:<br>
+<font color="#0000FF">[夜潭FLV播放程序]</font> 是一款FLV网络播放器，可以用于各种新闻系统或者blog系统,夜潭FLV播放程序拥有众多特点和自定义设置,经过不断升级 <br>
+修正，已经具备用户需要的大多数基本功能。<br>
+<br>
+功能:<br>
+<br>
+<font color="#FF0000">.可以读取xml设置播放列表<br>
+.多影片连续播放</font><br>
+.自定义尺寸，自动适应<br>
+.简洁播放器风格<br>
+.自定义循环播放<br>
+.支持最大化播放<br>
+.支持直接js嵌入 <font color="#FF0000">智能双语互译</font><br>
+<br>
+<br>
+-----------------------------=====使用方法=====-----------------------------------<br>
+<font color="#000080">
+@关于根目录下的index.asp和index.htm文件,其实都可以作为首页使用!</font></font></p>
+<p><font face="宋体" size="2"><font color="#000080">
+<br>
+·读取影片xml <br>
+<br>
+（请先打开根目录下的vcastr.xml）其中根目录下的vcastr.xml是播放列表的xml地址,不可以自行修改和添加播放列表。<br>
+如vcastr.xml里面的其中一行代码：&lt;item 
+item_url=&quot;http://www.ruochi.com/product/vcastr/flv/happy_feet.flv&quot; 
+item_title=&quot;-幸福的 <br>
+脚丫-预告片&quot; /&gt;<br>
+这个是其中的一个节目，你可以在&lt;vcaster&gt;&lt;/vcaster&gt;之间添加多个（一行一个）！<br>
+例如&lt;item item_url=&quot;你的影片地址&quot; item_title=&quot;你的影片名字&quot; /&gt;</font><br>
+----------------------------------------------------------------------------------<br>
+<br>
+<font color="#800080">·程序HTML代码：&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; <br>
+codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0&quot; 
+width=&quot;240&quot; height=&quot;120&quot;&gt;<br>
+&lt;param name=&quot;movie&quot; value=&quot;vcastr22.swf&quot;&gt;<br>
+&lt;param name=&quot;quality&quot; value=&quot;high&quot;&gt;<br>
+&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;<br>
+&lt;param name=&quot;FlashVars&quot; value=&quot;vcastr_xml=vcastr.xml&quot; /&gt;<br>
+&lt;embed src=&quot;vcastr22.swf&quot; allowFullScreen=&quot;true&quot; 
+FlashVars=&quot;vcastr_xml=vcastr.xml&quot; quality=&quot;high&quot; <br>
+pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot; 
+type=&quot;application/x-shockwave-flash&quot; width=&quot;240&quot; <br>
+height=&quot;120&quot;&gt;&lt;/embed&gt;<br>
+&lt;/object&gt;</font><br>
+<br>
+----------------------------------------------------------------------------------<br>
+<br>
+·高级选项<br>
+<br>
+<br>
+&lt;param name=&quot;FlashVars&quot; value=&quot;*&quot; /&gt;<br>
+<br>
+FlashVars=&quot;*&quot;<br>
+<br>
+<br>
+在以上2处*部分添加参数，使用 参数=值 的格式，多个参数用&amp;连接，参数数量不限制<br>
+<br>
+例如<br>
+<br>
+value=&quot;vcastr_file=http://www.transformersmovie.com/transformers_640.flv&amp;vcastr_title=变形金刚预告 
+<br>
+片&amp;BarColor=0xFF6600&amp;BarPosition=1&quot;<br>
+<br>
+表示影片地址是&quot;http://www.transformersmovie.com/transformers_640.flv&quot;，标题是&quot;变形金刚预告片&quot;,控制栏颜色是0xFF6600，控制栏位 
+<br>
+置在下方<br>
+<br>
+&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; <br>
+codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0&quot; 
+width=&quot;500&quot; height=&quot;224&quot;&gt;<br>
+&lt;param name=&quot;movie&quot; value=&quot;vcastr22.swf&quot;&gt;<br>
+&lt;param name=&quot;quality&quot; value=&quot;high&quot;&gt;<br>
+&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;<br>
+&lt;param name=&quot;FlashVars&quot; 
+value=&quot;vcastr_file=http://www.transformersmovie.com/transformers_640.flv&amp;vcastr_title=变形金刚预告 
+<br>
+片&amp;BarColor=0xFF6600&amp;BarPosition=1&quot; /&gt;<br>
+&lt;embed src=&quot;vcastr22.swf&quot; allowFullScreen=&quot;true&quot; <br>
+FlashVars=&quot;vcastr_file=http://www.transformersmovie.com/transformers_640.flv&amp;vcastr_title=变形金刚预告 
+<br>
+片&amp;BarColor=0xFF6600&amp;BarPosition=1&quot; quality=&quot;high&quot; 
+pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot; <br>
+type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;224&quot;&gt;&lt;/embed&gt;<br>
+&lt;/object&gt;<br>
+<br>
+<br>
+<br>
+<font color="#FF0000">参数名称<br>
+参数说明 默认值 <br>
+vcastr_file 方法2传递影片flv文件地址参数，多个使用|分开 空 <br>
+vcastr_title 影片标题参数，多个使用|分开，与方法2配合使用 空 <br>
+vcastr_xml 方法3 传递影片flv文件地址参数，样板参考 (根目录下的vcastr.xml 文件)<br>
+IsAutoPlay 影片自动播放参数：0表示不自动播放，1表示自动播放 0 <br>
+IsContinue 影片连续播放参数：0表示不连续播放，1表示连续循环播 1 <br>
+IsRandom 影片随机播放参数：0表示不随机播放，1表示随机播放 0 <br>
+DefaultVolume 默认音量参数 ：0-100 的数值，设置影片开始默认音量大小 100 <br>
+BarPosition 控制栏位置参数 ：0表示在影片上浮动显示，1表示在影片下方显示 0 <br>
+IsShowBar 控制栏显示参数 ：0表示不显示；1表示一直显示；2表示鼠标悬停时显示；3表示开始不显示，鼠标悬停后显示 2 <br>
+BarColor 播放控制栏颜色，颜色都以0x开始16进制数字表示 0x000033 <br>
+BarTransparent 播放控制栏透明度 60 <br>
+GlowColor 按键图标颜色，颜色都以0x开始16进制数字表示 0x66ff00 <br>
+IconColor 鼠标悬停时光晕颜色，颜色都以0x开始16进制数字表示 0xFFFFFF <br>
+TextColor 播放器文字颜色，颜色都以0x开始16进制数字表示 0xFFFFFF <br>
+LogoText 可以添加自己网站名称等信息(英文) 空 <br>
+LogoUrl 可以从外部读取logo图片,注意自己调整logo大小,支持图片格式和swf格式 空 <br>
+EndSwf 影片播放结束后,从外部读取swf文件，可以添加相关影片信息，影片分享等信息，需自己制作 空 <br>
+BeginSwf 影片开始播放之前,从外部读取swf文件，可以添加广告，或者网站信息，需自己制作 空 </font><br>
+<font color="#FF0000">IsShowTime 是否显示时间 : 0表示不显示时间，1表示显示时间 1 <br>
+BufferTime 影片缓冲时间，单位（秒） 2 </font></font></p>
+<p><font size="5" color="#008080"><b>风格每周更新，请联系QQ：724849296 免费拿风格。</b></font>更多东西来自<a href="http://www.9nine.cn/">http://www.9nine.cn/</a></p>
+
+</body>
+
+</html>

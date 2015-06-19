@@ -1,0 +1,4 @@
+C:\Users\Tianyong\Desktop\Music Player工作副本\Music Player\obj\Release\Music Player.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\Music Player\obj\Release\Music_Player.MainForm.resources
+C:\Users\Tianyong\Desktop\Music Player工作副本\Music Player\obj\Release\Music_Player.Properties.Resources.resources
+C:\Users\Tianyong\Desktop\Music Player工作副本\Music Player\obj\Release\Music Player.csproj.GenerateResource.Cache

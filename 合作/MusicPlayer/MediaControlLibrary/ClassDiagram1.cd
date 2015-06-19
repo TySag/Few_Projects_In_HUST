@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MediaControlLibrary.ImageProcess" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>ImageProcess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaControlLibrary.MediaContainer" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4snAcKdpDb2oAkiCikmVgygDoRc2GQIIqiAAEYAOEhk=</HashCode>
+      <FileName>MediaContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaControlLibrary.MediaEventArgs">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAAAIAAQAAAAAAABAAAIAAAAAEAAIAAAAAAAAAAA=</HashCode>
+      <FileName>MediaContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaControlLibrary.MediaListEventArgs">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>MediaContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaControlLibrary.MediaMouseEventArgs" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAgAAAIAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MediaContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaControlLibrary.MediaListMouseEventArgs">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAAI=</HashCode>
+      <FileName>MediaContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaControlLibrary.MediaItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAEAIAAIgAQAQIAAAlAgAAAgUCeACAAAEAgIEVgQA=</HashCode>
+      <FileName>MediaItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MediaControlLibrary.MediaItemCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkIAAEAACIAEAAAJCAgQBCQQQAUAAQCECACAAIBUIgI=</HashCode>
+      <FileName>MediaItemCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MediaControlLibrary.MediaList">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAAAAAIAAAkCAQAAgAAAAAAAIAAAAACMABgACggA=</HashCode>
+      <FileName>MediaList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaControlLibrary.MediaListCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkIAAEAACIAEAAABCAAABCQRQAUAIQCECICAAABUIAI=</HashCode>
+      <FileName>MediaListCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MediaControlLibrary.MediaVScroll" Collapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADAAAAAAQEgCQgBAAZAQIIEJgAgAggAQaAElCEIBhIA=</HashCode>
+      <FileName>MediaVScroll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaControlLibrary.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAABBEAgAEQAAAAAAABAAAAAABqA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

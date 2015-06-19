@@ -1,0 +1,5 @@
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\bin\Release\Tian.Button.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\bin\Release\Tian.Button.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\obj\Release\Tian.Button.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\obj\Release\Tian.Button.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\obj\Release\Tian.Button.pdb

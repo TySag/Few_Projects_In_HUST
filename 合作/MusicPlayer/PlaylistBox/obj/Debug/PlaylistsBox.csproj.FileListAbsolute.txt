@@ -1,0 +1,24 @@
+C:\Users\Tianyong\Desktop\Music Player工作副本\PlaylistBox\bin\Debug\PlaylistsControl.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\PlaylistBox\bin\Debug\PlaylistsControl.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\PlaylistBox\obj\Debug\PlaylistsBox.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\PlaylistBox\obj\Debug\PlaylistsBox.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\PlaylistBox\obj\Debug\PlaylistsControl.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\PlaylistBox\obj\Debug\PlaylistsControl.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\PlaylistBox\obj\Debug\PlaylistBox.Properties.Resources.resources
+C:\Users\Tianyong\Desktop\Music Player工作副本\PlaylistBox\obj\Debug\PlaylistBox.PlayListBox.resources
+C:\Users\Tianyong\Desktop\MusicPlayer\PlaylistBox\bin\Debug\PlaylistsControl.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\PlaylistBox\bin\Debug\PlaylistsControl.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\PlaylistBox\obj\Debug\PlaylistsBox.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\MusicPlayer\PlaylistBox\obj\Debug\PlaylistBox.Properties.Resources.resources
+C:\Users\Tianyong\Desktop\MusicPlayer\PlaylistBox\obj\Debug\PlaylistBox.PlayListBox.resources
+C:\Users\Tianyong\Desktop\MusicPlayer\PlaylistBox\obj\Debug\PlaylistsBox.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\MusicPlayer\PlaylistBox\obj\Debug\PlaylistsControl.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\PlaylistBox\obj\Debug\PlaylistsControl.pdb
+H:\工作暂存区\合作\MusicPlayer - 副本\PlaylistBox\bin\Debug\PlaylistsControl.dll
+H:\工作暂存区\合作\MusicPlayer - 副本\PlaylistBox\bin\Debug\PlaylistsControl.pdb
+H:\工作暂存区\合作\MusicPlayer - 副本\PlaylistBox\obj\Debug\PlaylistsBox.csprojResolveAssemblyReference.cache
+H:\工作暂存区\合作\MusicPlayer - 副本\PlaylistBox\obj\Debug\PlaylistBox.Properties.Resources.resources
+H:\工作暂存区\合作\MusicPlayer - 副本\PlaylistBox\obj\Debug\PlaylistBox.PlayListBox.resources
+H:\工作暂存区\合作\MusicPlayer - 副本\PlaylistBox\obj\Debug\PlaylistsBox.csproj.GenerateResource.Cache
+H:\工作暂存区\合作\MusicPlayer - 副本\PlaylistBox\obj\Debug\PlaylistsControl.dll
+H:\工作暂存区\合作\MusicPlayer - 副本\PlaylistBox\obj\Debug\PlaylistsControl.pdb

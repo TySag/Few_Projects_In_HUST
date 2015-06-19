@@ -1,0 +1,46 @@
+POST /connect/app/check_inspection?cyt=1 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Million/102 (ace; htc_ace; 2.3.4) htc_wwe/htc_ace/ace:2.3.3/GRI40/87995:user/release-keys# end build properties
+Host: game1-cbt.ma.sdo.com:10001
+Content-Length: 99
+Expect: 100-continue
+Connection: Keep-Alive
+
+POST /connect/app/check_inspection?cyt=1 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Million/102 (ace; htc_ace; 2.3.4) htc_wwe/htc_ace/ace:2.3.3/GRI40/87995:user/release-keys# end build properties
+Host: game1-cbt.ma.sdo.com:10001
+Content-Length: 97
+Expect: 100-continue
+
+POST /connect/app/login?cyt=1 HTTP/1.0
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Million/102 (ace; htc_ace; 2.3.4) htc_wwe/htc_ace/ace:2.3.3/GRI40/87995:user/release-keys# end build properties
+Cookie: S=vgecc9g23tc8n0fkcbev83oha1
+Host: game1-cbt.ma.sdo.com:10001
+Content-Length: 321
+
+POST /connect/app/login?cyt=1 HTTP/1.0
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Million/102 (ace; htc_ace; 2.3.4) htc_wwe/htc_ace/ace:2.3.3/GRI40/87995:user/release-keys# end build properties
+Cookie: S=o76heahh4inqh4lvoaev92vli1
+Host: game1-cbt.ma.sdo.com:10001
+Content-Length: 321
+
+POST /connect/app/login?cyt=1 HTTP/1.0
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Million/102 (ace; htc_ace; 2.3.4) htc_wwe/htc_ace/ace:2.3.3/GRI40/87995:user/release-keys# end build properties
+Cookie: S=ff55hgr3p3dg22i4ngapfdk8u3
+Host: game2-cbt.ma.sdo.com:10001
+Content-Length: 323
+
+POST /connect/app/login?cyt=1 HTTP/1.0
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Million/102 (ace; htc_ace; 2.3.4) htc_wwe/htc_ace/ace:2.3.3/GRI40/87995:user/release-keys# end build properties
+Cookie: S=7aburbr12bb7l1jsbifd35iqi4
+Host: game3-cbt.ma.sdo.com:10001
+Content-Length: 327
+
+login_id=q9sXQjuK1sqzfd9eIt2vp0NO7Fc4kcb9Xv3%2bytfjjIzFw0OnpRVmcK6JLN7FR%2ffh6YZlRsdD6ep2CTKlZx3P6A%3d%3d%0A&password=Z707Dej%2bY91PEc2YIK8mBJ267Fd%2fh2V%2b5P0hlWGh%2fk0LW%2fVCIBPLu5EIXuJtdHu9NkTtLiQdMVpuEcYZEUGwCA%3d%3d%0A&K=SwsR27Gvhyerr%2bEoZckl36UGugXoYG4dpRVCchnD2oIkpDbu%2bSu4qla5q%2b0DN9eC4lR3gXsb3Hq9vm0nuQXs3A%3d%3d%0A
+
+login_id=v7qP5999hJ8lO9dOx4m8KULE2vEK6iOjVJYvhJZr%2fxXMzfcqYBOjPbTolhCkZA%2fmTAhk7yZPowMTFNmgMaQiMw%3d%3d%0A&password=pdJRHFphPIPlEL3fX%2fs8TNSC3tXQf0X6xdbA%2bNvB2fIyGvGXh%2f7SG5bn46nRV30iC9k%2fKAjbkZzK7oKbpu4RhQ%3d%3d%0A&K=xDMdCeA10wOSppVMGDUxvNlRwWoAYIEMwh%2bK6LED2lSSsZAdaiIUAy37xG8LIp2o%2fG8VunBHcKIcWDBlIJ0QQw%3d%3d%0A

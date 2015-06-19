@@ -1,0 +1,8 @@
+body{font-family:verdana,arial,tahoma;font-size:12px;color:#333}
+img{border:0}
+
+.b{width:1160px;padding:0 12px;background-color:#FFF}
+.l{width:840px;height:3000px;background-color:#f4f4f4;float:left;border-right:1px solid #DDD;padding-right:10px;text-align:center}
+.r{width:300px;float:right;background-color:#f60}
+
+.div2{top:10px;z-index:999;position:fixed;_position:absolute}

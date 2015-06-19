@@ -1,0 +1,14 @@
+C:\Users\Tianyong\Desktop\Music Player工作副本\TabStrip\bin\Debug\TabStrip.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\TabStrip\bin\Debug\TabStrip.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\TabStrip\obj\Debug\TabStrip.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\TabStrip\obj\Debug\TabStrip.TabStrip.resources
+C:\Users\Tianyong\Desktop\Music Player工作副本\TabStrip\obj\Debug\TabStrip.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\TabStrip\obj\Debug\TabStrip.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\TabStrip\obj\Debug\TabStrip.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\TabStrip\bin\Debug\TabStrip.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\TabStrip\bin\Debug\TabStrip.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\TabStrip\obj\Debug\TabStrip.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\MusicPlayer\TabStrip\obj\Debug\TabStrip.TabStrip.resources
+C:\Users\Tianyong\Desktop\MusicPlayer\TabStrip\obj\Debug\TabStrip.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\MusicPlayer\TabStrip\obj\Debug\TabStrip.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\TabStrip\obj\Debug\TabStrip.pdb

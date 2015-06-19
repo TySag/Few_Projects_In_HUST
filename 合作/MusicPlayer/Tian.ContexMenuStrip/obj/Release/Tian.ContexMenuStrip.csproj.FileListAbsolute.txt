@@ -1,0 +1,4 @@
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.ContexMenuStrip\bin\Release\Tian.ContexMenuStrip.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.ContexMenuStrip\bin\Release\Tian.ContexMenuStrip.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.ContexMenuStrip\obj\Release\Tian.ContexMenuStrip.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.ContexMenuStrip\obj\Release\Tian.ContexMenuStrip.pdb

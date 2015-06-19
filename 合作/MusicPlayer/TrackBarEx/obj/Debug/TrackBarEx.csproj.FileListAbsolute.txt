@@ -1,0 +1,28 @@
+C:\Users\Tianyong\Desktop\TrackBarEx\TrackBarEx\bin\Debug\TrackBarEx.dll
+C:\Users\Tianyong\Desktop\TrackBarEx\TrackBarEx\bin\Debug\TrackBarEx.pdb
+C:\Users\Tianyong\Desktop\TrackBarEx\TrackBarEx\obj\Debug\TrackBarEx.TrackBarEx.resources
+C:\Users\Tianyong\Desktop\TrackBarEx\TrackBarEx\obj\Debug\TrackBarEx.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\TrackBarEx\TrackBarEx\obj\Debug\TrackBarEx.dll
+C:\Users\Tianyong\Desktop\TrackBarEx\TrackBarEx\obj\Debug\TrackBarEx.pdb
+C:\Users\Tianyong\Desktop\TrackBarEx\TrackBarEx\obj\Debug\TrackBarEx.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\TrackBarEx\bin\Debug\TrackBarEx.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\TrackBarEx\bin\Debug\TrackBarEx.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\TrackBarEx\obj\Debug\TrackBarEx.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\TrackBarEx\obj\Debug\TrackBarEx.TrackBarEx.resources
+C:\Users\Tianyong\Desktop\Music Player工作副本\TrackBarEx\obj\Debug\TrackBarEx.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\TrackBarEx\obj\Debug\TrackBarEx.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\TrackBarEx\obj\Debug\TrackBarEx.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\TrackBarEx\bin\Debug\TrackBarEx.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\TrackBarEx\bin\Debug\TrackBarEx.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\TrackBarEx\obj\Debug\TrackBarEx.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\MusicPlayer\TrackBarEx\obj\Debug\TrackBarEx.TrackBarEx.resources
+C:\Users\Tianyong\Desktop\MusicPlayer\TrackBarEx\obj\Debug\TrackBarEx.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\MusicPlayer\TrackBarEx\obj\Debug\TrackBarEx.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\TrackBarEx\obj\Debug\TrackBarEx.pdb
+H:\工作暂存区\合作\MusicPlayer - 副本\TrackBarEx\bin\Debug\TrackBarEx.dll
+H:\工作暂存区\合作\MusicPlayer - 副本\TrackBarEx\bin\Debug\TrackBarEx.pdb
+H:\工作暂存区\合作\MusicPlayer - 副本\TrackBarEx\obj\Debug\TrackBarEx.csprojResolveAssemblyReference.cache
+H:\工作暂存区\合作\MusicPlayer - 副本\TrackBarEx\obj\Debug\TrackBarEx.TrackBarEx.resources
+H:\工作暂存区\合作\MusicPlayer - 副本\TrackBarEx\obj\Debug\TrackBarEx.csproj.GenerateResource.Cache
+H:\工作暂存区\合作\MusicPlayer - 副本\TrackBarEx\obj\Debug\TrackBarEx.dll
+H:\工作暂存区\合作\MusicPlayer - 副本\TrackBarEx\obj\Debug\TrackBarEx.pdb

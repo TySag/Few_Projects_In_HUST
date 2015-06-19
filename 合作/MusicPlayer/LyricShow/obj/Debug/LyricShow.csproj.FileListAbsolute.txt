@@ -1,0 +1,36 @@
+C:\Users\hjkcai\AppData\Local\Temporary Projects\LyricShow\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hjkcai\AppData\Local\Temporary Projects\LyricShow\obj\Debug\LyricShow.frmDesktopLyric.resources
+C:\Users\hjkcai\AppData\Local\Temporary Projects\LyricShow\obj\Debug\LyricShow.LyricShow.resources
+C:\Users\hjkcai\AppData\Local\Temporary Projects\LyricShow\obj\Debug\LyricShow.csproj.GenerateResource.Cache
+C:\Users\hjkcai\AppData\Local\Temporary Projects\LyricShow\bin\Debug\LyricShow.dll
+C:\Users\hjkcai\AppData\Local\Temporary Projects\LyricShow\bin\Debug\LyricShow.pdb
+C:\Users\hjkcai\AppData\Local\Temporary Projects\LyricShow\obj\Debug\LyricShow.dll
+C:\Users\hjkcai\AppData\Local\Temporary Projects\LyricShow\obj\Debug\LyricShow.pdb
+C:\Users\hjkcai\Documents\Visual Studio 2008\Projects\LyricShow\LyricShow\bin\Debug\LyricShow.dll
+C:\Users\hjkcai\Documents\Visual Studio 2008\Projects\LyricShow\LyricShow\bin\Debug\LyricShow.pdb
+C:\Users\hjkcai\Documents\Visual Studio 2008\Projects\LyricShow\LyricShow\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hjkcai\Documents\Visual Studio 2008\Projects\LyricShow\LyricShow\obj\Debug\LyricShow.frmDesktopLyric.resources
+C:\Users\hjkcai\Documents\Visual Studio 2008\Projects\LyricShow\LyricShow\obj\Debug\LyricShow.csproj.GenerateResource.Cache
+C:\Users\hjkcai\Documents\Visual Studio 2008\Projects\LyricShow\LyricShow\obj\Debug\LyricShow.dll
+C:\Users\hjkcai\Documents\Visual Studio 2008\Projects\LyricShow\LyricShow\obj\Debug\LyricShow.pdb
+C:\Users\Tianyong\Desktop\LyricShow\LyricShow\bin\Debug\LyricShow.dll
+C:\Users\Tianyong\Desktop\LyricShow\LyricShow\bin\Debug\LyricShow.pdb
+C:\Users\Tianyong\Desktop\LyricShow\LyricShow\obj\Debug\LyricShow.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\LyricShow\LyricShow\obj\Debug\LyricShow.frmDesktopLyric.resources
+C:\Users\Tianyong\Desktop\LyricShow\LyricShow\obj\Debug\LyricShow.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\LyricShow\LyricShow\obj\Debug\LyricShow.dll
+C:\Users\Tianyong\Desktop\LyricShow\LyricShow\obj\Debug\LyricShow.pdb
+C:\Users\Tianyong\Desktop\仿酷狗参考源码\LyricShow\LyricShow\bin\Debug\LyricShow.dll
+C:\Users\Tianyong\Desktop\仿酷狗参考源码\LyricShow\LyricShow\bin\Debug\LyricShow.pdb
+C:\Users\Tianyong\Desktop\仿酷狗参考源码\LyricShow\LyricShow\obj\Debug\LyricShow.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\仿酷狗参考源码\LyricShow\LyricShow\obj\Debug\LyricShow.frmDesktopLyric.resources
+C:\Users\Tianyong\Desktop\仿酷狗参考源码\LyricShow\LyricShow\obj\Debug\LyricShow.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\仿酷狗参考源码\LyricShow\LyricShow\obj\Debug\LyricShow.dll
+C:\Users\Tianyong\Desktop\仿酷狗参考源码\LyricShow\LyricShow\obj\Debug\LyricShow.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\LyricShow\bin\Debug\LyricShow.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\LyricShow\bin\Debug\LyricShow.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\LyricShow\obj\Debug\LyricShow.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\MusicPlayer\LyricShow\obj\Debug\LyricShow.frmDesktopLyric.resources
+C:\Users\Tianyong\Desktop\MusicPlayer\LyricShow\obj\Debug\LyricShow.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\MusicPlayer\LyricShow\obj\Debug\LyricShow.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\LyricShow\obj\Debug\LyricShow.pdb

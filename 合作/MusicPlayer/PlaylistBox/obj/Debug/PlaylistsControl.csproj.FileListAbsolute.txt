@@ -1,0 +1,8 @@
+C:\Users\Tianyong\Desktop\Music Player工作副本\_CUSTOM_CONTROLS\obj\Debug\Playlists.Properties.Resources.resources
+C:\Users\Tianyong\Desktop\Music Player工作副本\_CUSTOM_CONTROLS\obj\Debug\PlaylistsControl.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\_CUSTOM_CONTROLS\bin\Debug\PlaylistsControl.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\_CUSTOM_CONTROLS\bin\Debug\PlaylistsControl.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\_CUSTOM_CONTROLS\obj\Debug\PlaylistsControl.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\_CUSTOM_CONTROLS\obj\Debug\PlaylistsControl.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\_CUSTOM_CONTROLS\obj\Debug\PlaylistsControl.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\_CUSTOM_CONTROLS\obj\Debug\Playlists.PlayListBox.resources

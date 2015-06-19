@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>酷播迷你免费网页视频播放器演示</title>
+<meta name="keywords" content="酷播迷你列表连播,列表播放器,免费网页视频播放器,酷播迷你官方下载,免费flv播放器" />
+<meta name="description" content="酷播迷你V3新款,支持列表连播功能,免费下载,酷播迷你官方下载,免费flv播放器" />
+<link rel="stylesheet" type="text/css" href="Images/common.css">
+</head>
+<body>
+<!--header/begin-->
+<div id="header">
+<div class="subnav">
+<p class="sublogo"><a href="http://www.cuplayer.net/apps/CuPlayerMini.html" target="_blank"><img src="Images/Culogo.gif" alt="进入酷播迷你官方应用平台" width="160" height="40" border="0" /></a></p>
+<p class="sublink"><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Index.html" target="_blank" >官方应用文档</a> <a href="http://www.cuplayer.net/apps/CuPlayerMiniDown.html" target="_blank" >酷播官方下载</a> <a href="http://www.cuplayer.net/apps/CuPlayerMiniDown.html" target="_blank" >酷播功能介绍</a></p>
+</div>
+</div>
+<!--header/end-->
+
+<!--otherdemo/begin-->
+<div id="otherdemo">
+<dl class="b1">
+<dt><h2>基础应用(单个视频播放)</h2></dt>
+<dd><a href="demo1.html" >swfObject模式调用</a></dd>
+<dd><a href="demo2.html" >object模式调用[常用]</a></dd>
+<dd><a href="demo3.html" >Ebemb模式调用</a></dd>
+</dl>
+<dl>
+<dt><h2>高级应用(列表视频播放)</h2></dt>
+<dd><a href="demolist1.html" >列表自动连播[显示列表]</a></dd>
+<dd><a href="demolist2.html" >列表自动连播[不显示列表]</a></dd>
+<dd><a href="demolist3.html" >列表点击播放</a></dd>
+</dl>
+<dl>
+<dt><h2>特效应用/函数介绍</h2></dt>
+<dd><a href="demo11.html" >[特效]弹出层效果应用1</a></dd>
+<dd><a href="demo12.html" >[特效]弹出层效果应用2</a></dd>
+<dd><a href="demo13.html" >视频结束getNext函数应用</a></dd>
+</dl>
+<dl>
+<dt><h2>常见问题官方解答</h2></dt>
+<dd><a href="help1.html" >酷播安装使用步骤</a></dd>
+<dd><a href="help2.html" >显示"升级"时如何解决</a></dd>
+<dd><a href="help2.html" >显示黑框时如何解决</a></dd>
+</dl>
+<dl>
+<dt><h2>CMS安装官方教程</h2></dt>
+<dd><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help53.html" target="_blank" >帝国CMS安装教程</a></dd>
+<dd><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help51.html" target="_blank" >织梦DEDECMS安装教程</a></dd>
+<dd><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help52.html" target="_blank" >PHPCMS安装教程</a></dd>
+</dl>
+</div>
+<div class="blank"></div>
+<!--otherdemo/end-->
+
+<!--myplayer/begin-->
+<div id="myplayer">
+
+<!--酷播迷你 CuPlayerMiniV3.0 代码开始-->
+<script type="text/javascript" src="Images/swfobject.js"></script>
+<div id="CuPlayer" > <strong>酷播迷你(CuPlayerMiniV2.3) 提示：您的Flash Player版本过低，请<a href="http://www.CuPlayer.com/" >点此进行播放器升级</a>！</strong> </div>
+<script type=text/javascript>
+var so = new SWFObject("CuPlayerMiniV3_Black_S.swf","CuPlayer","600","400","9","#000000");
+so.addParam("allowfullscreen","true");
+so.addParam("allowscriptaccess","always");
+so.addParam("wmode","opaque");
+so.addParam("quality","high");
+so.addParam("salign","lt");
+so.addVariable("CuPlayerFile","http://www.telunsu.net/flash/flv/video2.flv");
+so.addVariable("CuPlayerImage","Images/flashChangfa2.jpg");
+so.addVariable("CuPlayerLogo","Images/logo.png");
+so.addVariable("CuPlayerShowImage","true");
+so.addVariable("CuPlayerWidth","600");
+so.addVariable("CuPlayerHeight","400");
+so.addVariable("CuPlayerAutoPlay","false");
+so.addVariable("CuPlayerAutoRepeat","false");
+so.addVariable("CuPlayerShowControl","true");
+so.addVariable("CuPlayerAutoHideControl","false");
+so.addVariable("CuPlayerAutoHideTime","6");
+so.addVariable("CuPlayerVolume","80");
+so.addVariable("CuPlayerGetNext","false");
+so.write("CuPlayer");	
+</script>
+<!--酷播迷你 CuPlayerMiniV3.0 代码结束-->
+</div>
+<!--myplayer/end-->
+<div id="title">
+<h2>基础应用( swfObject模式调用模式 )</h2>
+</div>
+
+<!--code/begin-->
+<div id="code" align="center" >
+<fieldset>
+<legend>
+<h1>基础应用( swfObject模式调用模式 )代码参考：</h1>
+</legend>
+<textarea cols="95" rows="13" id="code2"  name="89525.com">
+<!--酷播迷你 CuPlayerMiniV3.0 代码开始-->
+<script type="text/javascript" src="/CuPlayer/Images/swfobject.js"></script>
+<div id="CuPlayer">
+<strong>酷播迷你(CuPlayerMiniV3.0) 提示：你的Flash Player版本过低，请<a href="http://www.CuPlayer.com/" >点此进行播放器升级</a></strong>
+</div>
+<script type="text/javascript">
+var so = new SWFObject("/CuPlayer/CuPlayerMiniV3_Black_S.swf","CuPlayer","600","400","9","#000000");
+so.addParam("allowfullscreen","true");
+so.addParam("allowscriptaccess","always");
+so.addParam("wmode","opaque");
+so.addParam("quality","high");
+so.addParam("salign","lt");
+so.addVariable("CuPlayerFile","http://www.telunsu.net/flash/flv/video2.flv");
+so.addVariable("CuPlayerImage","/CuPlayer/Images/flashChangfa2.jpg");
+so.addVariable("CuPlayerShowImage","true");
+so.addVariable("CuPlayerWidth","600");
+so.addVariable("CuPlayerHeight","400");
+so.addVariable("CuPlayerAutoPlay","false");
+so.addVariable("CuPlayerAutoRepeat","true");
+so.addVariable("CuPlayerShowControl","true");
+so.addVariable("CuPlayerAutoHideControl","false");
+so.addVariable("CuPlayerAutoHideTime","6");
+so.addVariable("CuPlayerVolume","80");
+so.addVariable("CuPlayerGetNext","false");
+so.write("CuPlayer");	
+</script>
+<!--酷播迷你 CuPlayerMiniV3.0 代码结束-->
+</textarea>
+</fieldset>
+</div>
+<!--code/end-->
+
+
+<!--footer/begin-->
+<div id="footer" class="en">
+<div class="copy"><p class="about">酷播 <strong><a href="http://www.CuPlayer.com" target="_blank">www.CuPlayer.com</a></strong> / 让传播更生动 2010-2012 (C) All Rights Reserved.</p>
+<p class="contact"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=176797520&site=qq&menu=yes"><img src="http://wpa.qq.com/pa?p=2:176797520:41 &r=0.7833309615211892" alt="酷播在线客服" border="0" align="absmiddle" title="点击这里给我发消息"></a> 客服QQ:<strong>176797520</strong></p> 
+<div style="display:none;"><script src="http://s84.cnzz.com/stat.php?id=4636346&web_id=4636346&show=pic" language="JavaScript"></script></div>
+</div>
+</div>
+<!--footer/end-->
+</body>
+</html>

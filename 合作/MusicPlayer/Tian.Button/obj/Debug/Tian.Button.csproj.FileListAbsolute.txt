@@ -1,0 +1,15 @@
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\bin\Debug\Tian.Button.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\bin\Debug\Tian.Button.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\obj\Debug\Tian.Button.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\obj\Debug\Tian.Button.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\Tian.Button\obj\Debug\Tian.Button.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\MusicPlayer\Tian.Button\bin\Debug\Tian.Button.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\Tian.Button\bin\Debug\Tian.Button.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\Tian.Button\obj\Debug\Tian.Button.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\MusicPlayer\Tian.Button\obj\Debug\Tian.Button.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\Tian.Button\obj\Debug\Tian.Button.pdb
+H:\工作暂存区\合作\MusicPlayer - 副本\Tian.Button\bin\Debug\Tian.Button.dll
+H:\工作暂存区\合作\MusicPlayer - 副本\Tian.Button\bin\Debug\Tian.Button.pdb
+H:\工作暂存区\合作\MusicPlayer - 副本\Tian.Button\obj\Debug\Tian.Button.csprojResolveAssemblyReference.cache
+H:\工作暂存区\合作\MusicPlayer - 副本\Tian.Button\obj\Debug\Tian.Button.dll
+H:\工作暂存区\合作\MusicPlayer - 副本\Tian.Button\obj\Debug\Tian.Button.pdb

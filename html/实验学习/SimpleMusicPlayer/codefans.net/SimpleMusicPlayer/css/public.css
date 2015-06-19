@@ -1,0 +1,32 @@
+
+/*player*/
+#player{font:400 12px/1.5 微软雅黑, arial,宋体;color:#959595;}
+#jplayer_control{width:600px; height: 60px;background:url(../img/player.png) repeat-x 0 -120px;  margin:5px auto 0 auto;}
+#jplayer_control span{display:inline-block; height:60px; width:25px; background:url(../img/player.png) no-repeat 0 0;}
+#jplayer_control .player-left{}
+#jplayer_control .player-right{float:right; background-position:right 0;}
+#jplayer_control span.sep{background-position:0 -61px;}
+#jplayer_control span.narrsep{width: 3px; background-position: -10px -61px;}
+#jplayer_play span{background-position:-24px -61px; margin-left:15px;}
+#jplayer_pause span{background-position:-46px -61px; margin-left:15px;}
+#jplayer_next span{background-position:-220px -61px; margin-left:15px;}
+#jplayer_vmin span{background-position:-158px -61px;width:16px;}
+#jplayer_vmin span.mute{background-position:-141px -61px;}
+#fav span{background-position:-90px -61px; margin-left:15px; width:25px;}
+#fav span.star{background-position:-114px -61px;}
+#jplayer_control a span{opacity:0.6; filter:alpha(opacity=60);}
+#jplayer_control a:hover span{opacity:1; filter:alpha(opacity=100);}
+#jplayer_control div{display:inline-block;}
+#seekbar{width:340px; height:2px;border:1px solid transparent; position:relative; top:-28px;}
+#seekbar .j-play-bar{height:100%; background:#34c4c4; width:0; position:absolute; top:0; left:0; z-index:5; width:0%;}
+#seekbar .j-seek-bar{height:100%; background:#eee; width:0; position:absolute; top:0; left:0; z-index:1; width:0%;}
+
+#seekbarss{width:100px; height:2px;border:1px solid transparent; position:relative; top:-28px;}
+#seekbarss .j-play-barss{height:100%; background:#34c4c4; width:0; position:absolute; top:0; left:0; z-index:5; width:0%;}
+#seekbarss .j-seek-barss{height:100%; background:#eee; width:0; position:absolute; top:0; left:0; z-index:1; width:0%;}
+
+#jplayer_control .duration{position:relative; top:-26px;}
+#jplayer_control #pt,#jplayer_control #tt{ display:inline; background:none;}
+#jplayer_control #jpalyer_v_wrap{width:0; height:50px; font-size:0; position:relative; top:-30px; cursor:pointer;}
+#jplayer_control #jplayer_vbar{background:#eee; width:100%; height:2px; cursor:pointer; margin-top:25px;  margin-right:5px;display:none;}
+#vamount{height:100%; width:100%; background:#34c4c4;}

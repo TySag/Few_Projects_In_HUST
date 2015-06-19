@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>酷播安装使用教程,酷播迷你免费网页视频播放器演示</title>
+<meta name="keywords" content="酷播安装使用教程代码参考,酷播迷你列表连播,列表播放器,免费网页视频播放器,酷播迷你官方下载,免费flv播放器" />
+<meta name="description" content="酷播安装使用教程代码参考,酷播迷你V3新款,支持列表连播功能,免费下载,酷播迷你官方下载,免费flv播放器" />
+<link rel="stylesheet" type="text/css" href="Images/common.css">
+<style type="text/css">
+<!--
+.mark{color:#FF5A15;}
+.blue{color:blue;}
+.green{color:green;}
+.red{color:red;}
+.cGray,a.cGray:link,a.cGray:visited{ color:#6D6359; }
+.cOrange2,a.cOrange2:link,a.cOrange2:visited{ color:#ce0400; }
+.cOrange3,a.cOrange3:link,a.cOrange3:visited{ color:#ce0400;text-decoration:underline; }
+a.cOrange3:hover{  color:#6D6359; }
+.f12,h5{font-size:12px; font-weight:normal;}
+.cGreen2,a.cGreen2:link,a.cGreen2:visited{ color:#336600; }
+.en {font-family:Verdana, Arial, Helvetica, sans-serif,"宋体"; }
+
+div#code {background:#ffffff;}
+fieldset{border:1px #cccccc solid;padding:10px;margin-bottom:10px;display:block; font-family:Verdana, Arial, Helvetica, sans-serif;line-height:28px; text-align:left; background:#ffffff;}
+fieldset dl dt { line-height:28px;font-weight:bold; display:inline;}
+fieldset dl dd { line-height:28px; display:inline;}
+.cOrange21 {color:#ce0400; }
+.f121 {font-size:12px; font-weight:normal;}
+-->
+</style>
+</head>
+<body>
+<!--header/begin-->
+<div id="header">
+<div class="subnav">
+<p class="sublogo"><a href="http://www.cuplayer.net/apps/CuPlayerMini.html" target="_blank"><img src="Images/Culogo.gif" alt="进入酷播迷你官方应用平台" width="160" height="40" border="0" /></a></p>
+<p class="sublink"><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Index.html" target="_blank" >官方应用文档</a> <a href="http://www.cuplayer.net/apps/CuPlayerMiniDown.html" target="_blank" >酷播官方下载</a> <a href="http://www.cuplayer.net/apps/CuPlayerMiniDown.html" target="_blank" >酷播功能介绍</a></p>
+</div>
+</div>
+<!--header/end-->
+
+<!--otherdemo/begin-->
+<div id="otherdemo">
+<dl class="b1">
+<dt><h2>基础应用(单个视频播放)</h2></dt>
+<dd><a href="demo1.html" >swfObject模式调用</a></dd>
+<dd><a href="demo2.html" >object模式调用[常用]</a></dd>
+<dd><a href="demo3.html" >Ebemb模式调用</a></dd>
+</dl>
+<dl>
+<dt><h2>高级应用(列表视频播放)</h2></dt>
+<dd><a href="demolist1.html" >列表自动连播[显示列表]</a></dd>
+<dd><a href="demolist2.html" >列表自动连播[不显示列表]</a></dd>
+<dd><a href="demolist3.html" >列表点击播放</a></dd>
+</dl>
+<dl>
+<dt><h2>特效应用/函数介绍</h2></dt>
+<dd><a href="demo11.html" >[特效]弹出层效果应用1</a></dd>
+<dd><a href="demo12.html" >[特效]弹出层效果应用2</a></dd>
+<dd><a href="demo13.html" >视频结束getNext函数应用</a></dd>
+</dl>
+<dl>
+<dt><h2>常见问题官方解答</h2></dt>
+<dd><a href="help1.html" >酷播安装使用步骤</a></dd>
+<dd><a href="help2.html" >显示"升级"时如何解决</a></dd>
+<dd><a href="help2.html" >显示黑框时如何解决</a></dd>
+</dl>
+<dl>
+<dt><h2>CMS安装官方教程</h2></dt>
+<dd><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help53.html" target="_blank" >帝国CMS安装教程</a></dd>
+<dd><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help51.html" target="_blank" >织梦DEDECMS安装教程</a></dd>
+<dd><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help52.html" target="_blank" >PHPCMS安装教程</a></dd>
+</dl>
+</div>
+<div class="blank"></div>
+<!--otherdemo/end-->
+
+
+
+
+<!--code/begin-->
+<div id="code" align="center" >
+<fieldset>
+<legend>
+<h1>安装使用方式(1)：swfobject方式</h1>
+</legend>
+<div class="content">
+  <h5 ><span >第一步：请将从 <a href="http://www.cuplayer.com/cu/download.html" target="_blank" class="cOrange3">http://www.cuplayer.com/cu/download.html</a> 下载的rar压缩包解压，然后将解压后的CuPlayer整个目录上传到网站根目录，上传完成后，你即可通过以下任何一个地址测试上传文件是否正常：<br />
+  </span><span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/demo1.html</span><br />
+  <span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/demo2.html</span><br />
+  <span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/demo3.html</span></h5>
+		 
+		  <h5 >第二步：如果用以上网址可以正常播放了，再复制以下代码到你网站中任何要添加播放器的页面中；</h5>
+		  <div id="examplerun">
+<textarea cols="95" rows="13" id="code2"  name="89525.com">
+<!--酷播迷你 CuPlayerMiniV3.0 代码开始-->
+<script type="text/javascript" src="/CuPlayer/Images/swfobject.js"></script>
+<div id="CuPlayer">
+<strong>酷播迷你(CuPlayerMiniV3.0) 提示：你的Flash Player版本过低，请<a href="http://www.CuPlayer.com/" >点此进行播放器升级</a></strong>
+</div>
+<script type="text/javascript">
+var so = new SWFObject("/CuPlayer/CuPlayerMiniV3_Black_S.swf","CuPlayer","600","400","9","#000000");
+so.addParam("allowfullscreen","true");
+so.addParam("allowscriptaccess","always");
+so.addParam("wmode","opaque");
+so.addParam("quality","high");
+so.addParam("salign","lt");
+so.addVariable("CuPlayerFile","http://www.telunsu.net/flash/flv/video2.flv");
+so.addVariable("CuPlayerImage","/CuPlayer/Images/flashChangfa2.jpg");
+so.addVariable("CuPlayerShowImage","true");
+so.addVariable("CuPlayerWidth","600");
+so.addVariable("CuPlayerHeight","400");
+so.addVariable("CuPlayerAutoPlay","false");
+so.addVariable("CuPlayerAutoRepeat","true");
+so.addVariable("CuPlayerShowControl","true");
+so.addVariable("CuPlayerAutoHideControl","false");
+so.addVariable("CuPlayerAutoHideTime","6");
+so.addVariable("CuPlayerVolume","80");
+so.addVariable("CuPlayerGetNext","false");
+so.write("CuPlayer");	
+</script>
+<!--酷播迷你 CuPlayerMiniV3.0 代码结束-->
+
+</textarea>
+<h5 ><button type="button" onclick="copy_clip(document.getElementById('code2').value)">复制代码</button></h5>
+<h5 >第三步：至此，安装已经完成，你就可以修改代码中<strong>视频地址</strong>，<strong>视频略缩图</strong>等参数，达到你想要的效果。</h5>
+<h5 >最后提示一下：在更换视频地址，视频参数时，强烈推荐使用以"/"开头的根地址，请不要使用相对地址。</h5>
+</div>
+</fieldset>
+<fieldset>
+<legend>
+<h1>安装使用方式(2)：Embed简写形式</h1>
+</legend>
+<div class="content">
+  <h5 ><span >第一步：请将从 <a href="http://www.cuplayer.com/cu/download.html" target="_blank" class="cOrange3">http://www.cuplayer.com/cu/download.html</a> 下载的rar压缩包解压，然后将解压后的CuPlayer整个目录上传到网站根目录，上传完成后，你即可通过以下任何一个地址测试上传文件是否正常：<br />
+  </span><span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/demo1.html</span><br />
+  <span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/demo2.html</span><br />
+  <span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/demo3.html</span></h5>
+		 
+		  <h5 >第二步：如果用以上网址可以正常播放了，再复制以下代码到你网站中任何要添加播放器的页面中；</h5>
+		  <div id="examplerun">
+<textarea cols="95" rows="13" id="code3"  name="89525.com">
+<!--酷播迷你 CuPlayerMiniV3.0 代码开始-->
+<embed src="/CuPlayer/CuPlayerMiniV3_Black_S.swf" flashvars="&CuPlayerFile=http://www.dali-group.com/heqizheng/flv.flv&CuPlayerImage=/CuPlayer/Images/flashChangfa2.jpg&CuPlayerWidth=600&CuPlayerHeight=400&CuPlayerAutoPlay=true&CuPlayerAutoRepeat=true&CuPlayerShowControl=false&CuPlayerAutoHideControl=false&CuPlayerAutoHideTime=5&CuPlayerVolume=80&CuPlayerGetNext=false" quality="high" bgcolor="#000000" width="600" height="400" name="simplevideostreaming" align="middle" allowScriptAccess="sameDomain" allowFullScreen="true" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+<!--酷播迷你 CuPlayerMiniV3.0 代码结束-->
+</textarea>
+<h5 ><button type="button" onclick="copy_clip(document.getElementById('code3').value)">复制代码</button></h5>
+<h5 >第三步：至此，安装已经完成，你就可以修改代码中<strong>视频地址</strong>，<strong>视频略缩图</strong>等参数，达到你想要的效果。</h5>
+<h5 >最后提示一下：在更换视频地址，视频参数时，强烈推荐使用以&quot;/&quot;开头的根地址，请不要使用相对地址。</h5>
+		  </div>
+</fieldset>
+
+	  
+<fieldset>
+<legend>
+<h1>安装使用方式(3) Adobe官方的写法：</h1>
+</legend>
+<div class="content">
+  <h5 ><span >第一步：请将从 <a href="http://www.cuplayer.com/cu/download.html" target="_blank" class="cOrange3">http://www.cuplayer.com/cu/download.html</a> 下载的rar压缩包解压，然后将解压后的CuPlayer整个目录上传到网站根目录，上传完成后，你即可通过以下任何一个地址测试上传文件是否正常：<br />
+  </span><span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/demo1.html</span><br />
+  <span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/demo2.html</span><br />
+  <span class="cOrange2 f12">http://www.你的域名.com/CuPlayer/demo3.html</span></h5>
+		 
+		  <h5 >第二步：如果用以上网址可以正常播放了，再复制以下代码到你网站中任何要添加播放器的页面中；</h5>
+		  <div id="examplerun">
+<textarea cols="95" rows="13" id="code4"  name="89525.com">
+<!--酷播迷你 CuPlayerMiniV3.0 代码开始-->
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="600" height="400" id="simplevideostreaming" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="allowFullScreen" value="true" />
+<param name="movie" value="/CuPlayer/CuPlayerMiniV3_Black_S.swf" />
+<param name="FlashVars" value="&CuPlayerFile=http://www.dali-group.com/lvcha/flv.flv&
+CuPlayerImage=/CuPlayer/Images/flashChangfa2.jpg&CuPlayerWidth=600&CuPlayerHeight=
+400&CuPlayerAutoPlay=false&CuPlayerAutoRepeat=true&CuPlayerShowControl=false&
+CuPlayerAutoHideControl=false&CuPlayerAutoHideTime=5&CuPlayerVolume=80&CuPlayerGetNext=false" />
+<param name="quality" value="high" /><param name="bgcolor" value="#000000" /> 
+<embed src="/CuPlayer/CuPlayerMiniV3_Black_S.swf" flashvars="&CuPlayerFile=http://www.dali-group.com/lvcha/flv.flv&CuPlayerImage=/CuPlayer/Images/flashChangfa2.jpg&CuPlayerWidth=600&CuPlayerHeight=400&CuPlayerAutoPlay=false&CuPlayerAutoRepeat=true&CuPlayerShowControl=false&CuPlayerAutoHideControl=false&CuPlayerAutoHideTime=5&CuPlayerVolume=80&CuPlayerGetNext=false" quality="high" bgcolor="#000000" width="600" height="400" name="simplevideostreaming" align="middle" allowScriptAccess="sameDomain" allowFullScreen="true" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+<!--酷播迷你 CuPlayerMiniV3.0 代码结束-->
+
+</textarea>
+<h5 ><button type="button" onclick="copy_clip(document.getElementById('code4').value)">复制代码</button></h5>
+<h5 >第三步：至此，安装已经完成，你就可以修改代码中<strong>视频地址</strong>，<strong>视频略缩图</strong>等参数，达到你想要的效果。</h5>
+<h5 >最后提示一下：在更换视频地址，视频参数时，强烈推荐使用以&quot;/&quot;开头的根地址，请不要使用相对地址。</h5>
+		  </div>
+</fieldset>
+</div>
+<!--code/end-->
+
+
+<!--footer/begin-->
+<div id="footer" class="en">
+<div class="copy"><p class="about">酷播 <strong><a href="http://www.CuPlayer.com" target="_blank">www.CuPlayer.com</a></strong> / 让传播更生动 2010-2012 (C) All Rights Reserved.</p>
+<p class="contact"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=176797520&site=qq&menu=yes"><img src="http://wpa.qq.com/pa?p=2:176797520:41 &r=0.7833309615211892" alt="酷播在线客服" border="0" align="absmiddle" title="点击这里给我发消息"></a> 客服QQ:<strong>176797520</strong></p> 
+<div style="display:none;"><script src="http://s84.cnzz.com/stat.php?id=4636346&web_id=4636346&show=pic" language="JavaScript"></script></div>
+</div>
+</div>
+<!--footer/end-->
+<script type="text/javascript">
+// <![CDATA[
+function copy_clip(copy){ 
+if (window.clipboardData){ 
+window.clipboardData.setData("Text", copy);}
+else if (window.netscape){
+netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');
+var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+if (!clip) return;
+var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+if (!trans) return;
+trans.addDataFlavor('text/unicode');
+var str = new Object();
+var len = new Object();
+var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+var copytext=copy;
+str.data=copytext;
+trans.setTransferData("text/unicode",str,copytext.length*2);
+var clipid=Components.interfaces.nsIClipboard;
+if (!clip) return false;
+clip.setData(trans,null,clipid.kGlobalClipboard);}
+alert("已复制到剪贴板")
+return false;
+;}
+
+// ]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+H:\工作暂存区\百万亚瑟忙\百万亚瑟忙\bin\Debug\百万亚瑟忙.exe
+H:\工作暂存区\百万亚瑟忙\百万亚瑟忙\bin\Debug\百万亚瑟忙.pdb
+H:\工作暂存区\百万亚瑟忙\百万亚瑟忙\obj\Debug\百万亚瑟忙.csprojResolveAssemblyReference.cache
+H:\工作暂存区\百万亚瑟忙\百万亚瑟忙\obj\Debug\百万亚瑟忙.Form1.resources
+H:\工作暂存区\百万亚瑟忙\百万亚瑟忙\obj\Debug\百万亚瑟忙.Properties.Resources.resources
+H:\工作暂存区\百万亚瑟忙\百万亚瑟忙\obj\Debug\百万亚瑟忙.csproj.GenerateResource.Cache
+H:\工作暂存区\百万亚瑟忙\百万亚瑟忙\obj\Debug\百万亚瑟忙.exe
+H:\工作暂存区\百万亚瑟忙\百万亚瑟忙\obj\Debug\百万亚瑟忙.pdb

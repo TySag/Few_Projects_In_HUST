@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{272EDD96-FA84-4421-9186-B522FDD97DF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MusicPlayer</RootNamespace>
+    <AssemblyName>白鸟播放器</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bass.Net, Version=2.4.10.3, Culture=neutral, PublicKeyToken=b7566c273e6ef480, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\CheckBoxEX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckBoxEX.Designer.cs">
+      <DependentUpon>CheckBoxEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadLyric.cs" />
+    <Compile Include="LrcDownloadShow.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMedia.cs" />
+    <Compile Include="Controls\PlayingTrackBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PlayingTrackBar.Designer.cs">
+      <DependentUpon>PlayingTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\VolumeMark.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\VolumeMark.Designer.cs">
+      <DependentUpon>VolumeMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VolumeTrackBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\VolumeTrackBar.Designer.cs">
+      <DependentUpon>VolumeTrackBar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PlayingTrackBar.resx">
+      <DependentUpon>PlayingTrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Controls\VolumeTrackBar.resx">
+      <DependentUpon>VolumeTrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LyricShow\LyricShow.csproj">
+      <Project>{3125B52E-0A33-4ECA-ADA1-DAF45C22461A}</Project>
+      <Name>LyricShow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MediaControlLibrary\MediaControlLibrary.csproj">
+      <Project>{970F21CC-892F-451C-B04C-F7117196D6CA}</Project>
+      <Name>MediaControlLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlaylistBox\PlaylistsBox.csproj">
+      <Project>{8F34E30F-DE61-416F-A3B0-B015AF578489}</Project>
+      <Name>PlaylistsBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TabControlEx\TabControlEx.csproj">
+      <Project>{E054D118-F011-4DC9-B524-DA7DA193ED77}</Project>
+      <Name>TabControlEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tian.Button\Tian.Button.csproj">
+      <Project>{704D51B6-963D-4FBE-9BD3-838F423A3B2E}</Project>
+      <Name>Tian.Button</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tian.ContexMenuStrip\Tian.ContexMenuStrip.csproj">
+      <Project>{0B267025-C01E-4DFB-89FE-2058EBA1C2DB}</Project>
+      <Name>Tian.ContexMenuStrip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrackBarEx\TrackBarEx.csproj">
+      <Project>{3AC28017-946F-4E18-AD32-243E88EC590E}</Project>
+      <Name>TrackBarEx</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\列表循环.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\随机播放.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\添加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下一曲.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\圆形背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\暂停.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\最小化.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\播放.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查找.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\窗口模式.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单曲播放.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\单曲循环.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\定位.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\上一曲.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\顺序播放.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

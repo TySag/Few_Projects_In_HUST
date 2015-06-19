@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>酷播安装使用教程,酷播迷你免费网页视频播放器演示</title>
+<meta name="keywords" content="酷播安装使用教程代码参考,酷播迷你列表连播,列表播放器,免费网页视频播放器,酷播迷你官方下载,免费flv播放器" />
+<meta name="description" content="酷播安装使用教程代码参考,酷播迷你V3新款,支持列表连播功能,免费下载,酷播迷你官方下载,免费flv播放器" />
+<link rel="stylesheet" type="text/css" href="Images/common.css">
+<style type="text/css">
+<!--
+.mark{color:#FF5A15;}
+.blue{color:blue;}
+.green{color:green;}
+.red{color:red;}
+.cGray,a.cGray:link,a.cGray:visited{ color:#6D6359; }
+.cOrange2,a.cOrange2:link,a.cOrange2:visited{ color:#ce0400; }
+.cOrange3,a.cOrange3:link,a.cOrange3:visited{ color:#ce0400;text-decoration:underline; }
+a.cOrange3:hover{  color:#6D6359; }
+.f12,h5{font-size:12px; font-weight:normal;}
+.cGreen2,a.cGreen2:link,a.cGreen2:visited{ color:#336600; }
+.en {font-family:Verdana, Arial, Helvetica, sans-serif,"宋体"; }
+
+div#code {background:#ffffff;}
+fieldset{border:1px #cccccc solid;padding:10px;margin-bottom:10px;display:block; font-family:Verdana, Arial, Helvetica, sans-serif;line-height:28px; text-align:left; background:#ffffff;}
+fieldset dl dt { line-height:28px;font-weight:bold; display:inline;}
+fieldset dl dd { line-height:28px; display:inline;}
+.cOrange21 {color:#ce0400; }
+.f121 {font-size:12px; font-weight:normal;}
+-->
+</style>
+</head>
+<body>
+<!--header/begin-->
+<div id="header">
+<div class="subnav">
+<p class="sublogo"><a href="http://www.cuplayer.net/apps/CuPlayerMini.html" target="_blank"><img src="Images/Culogo.gif" alt="进入酷播迷你官方应用平台" width="160" height="40" border="0" /></a></p>
+<p class="sublink"><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Index.html" target="_blank" >官方应用文档</a> <a href="http://www.cuplayer.net/apps/CuPlayerMiniDown.html" target="_blank" >酷播官方下载</a> <a href="http://www.cuplayer.net/apps/CuPlayerMiniDown.html" target="_blank" >酷播功能介绍</a></p>
+</div>
+</div>
+<!--header/end-->
+
+<!--otherdemo/begin-->
+<div id="otherdemo">
+<dl class="b1">
+<dt><h2>基础应用(单个视频播放)</h2></dt>
+<dd><a href="demo1.html" >swfObject模式调用</a></dd>
+<dd><a href="demo2.html" >object模式调用[常用]</a></dd>
+<dd><a href="demo3.html" >Ebemb模式调用</a></dd>
+</dl>
+<dl>
+<dt><h2>高级应用(列表视频播放)</h2></dt>
+<dd><a href="demolist1.html" >列表自动连播[显示列表]</a></dd>
+<dd><a href="demolist2.html" >列表自动连播[不显示列表]</a></dd>
+<dd><a href="demolist3.html" >列表点击播放</a></dd>
+</dl>
+<dl>
+<dt><h2>特效应用/函数介绍</h2></dt>
+<dd><a href="demo11.html" >[特效]弹出层效果应用1</a></dd>
+<dd><a href="demo12.html" >[特效]弹出层效果应用2</a></dd>
+<dd><a href="demo13.html" >视频结束getNext函数应用</a></dd>
+</dl>
+<dl>
+<dt><h2>常见问题官方解答</h2></dt>
+<dd><a href="help1.html" >酷播安装使用步骤</a></dd>
+<dd><a href="help2.html" >显示"升级"时如何解决</a></dd>
+<dd><a href="help2.html" >显示黑框时如何解决</a></dd>
+</dl>
+<dl>
+<dt><h2>CMS安装官方教程</h2></dt>
+<dd><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help53.html" target="_blank" >帝国CMS安装教程</a></dd>
+<dd><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help51.html" target="_blank" >织梦DEDECMS安装教程</a></dd>
+<dd><a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help52.html" target="_blank" >PHPCMS安装教程</a></dd>
+</dl>
+</div>
+<div class="blank"></div>
+<!--otherdemo/end-->
+
+
+
+
+<!--code/begin-->
+<div id="code" align="center" >
+
+<fieldset>
+<legend>
+<h1>问题1: 安装后，却提示“您的Flash Player版本过低，请点此进行播放器升级”</h1>
+</legend>
+<div class="content">
+  <h5 ><span >出现这种情况，基本上可以确定，你的安装中swfObject.js的地址不正</span>确，请注意以下代码中，红色部分的swfObject.js地址是否存在。<br />
+    <br />
+    <span class="cGray">&lt;!--酷播迷你 CuPlayerMiniV3.0 代码开始--&gt;<br />
+&lt;script type=&quot;text/javascript&quot; src=&quot;<strong class="cOrange2">Images/swfobject.js</strong>&quot;&gt;&lt;/script&gt;<br />
+&lt;div id=&quot;CuPlayer&quot; &gt; &lt;strong&gt;酷播迷你(CuPlayerMiniV2.3) 提示：您的Flash Player版本过低，请&lt;a href=&quot;http://www.CuPlayer.com/&quot; &gt;点此进行播放器升级&lt;/a&gt;！&lt;/strong&gt; &lt;/div&gt;<br />
+  ..........</span></h5>
+		 
+  </fieldset>
+
+	  
+<fieldset>
+<legend>
+<h1>问题2: 安装后，只看到一个黑色的区块，不播放视频</h1>
+</legend>
+<div class="content">
+  <h5 ><span >出现这种情况，请按以下步骤操作：<br />
+    1. 请确定视频地址是否有误，是否上传了？</span><br />
+  2. 如果确定视频地址是对的，上传了，你再确定一下，你服务器是否支持flv,mp4这样的mime类型。添加mime类型的步骤参见 <a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help71.html" target="_blank" class="cOrange3">http://www.cuplayer.net/apps/CuPlayerHelp/Help71.html</a>
+  <br />
+  3. 如何确定你的网站<strong>是否添加了flv的mime类型</strong>？你随便上传一个flv文件(比如test.flv)到你站根目录下，然后在浏览器地址栏中，输入该视频的地址<span class="green"> http://www.你的域名.com/test.flv</span> 如果会弹出，提示下载该文件，则表明，服务器已添加了flv的mime类型； <br />
+  4. 如何确定你的网站<strong>是否添加了mp4的mime类型</strong>？你随便上传一个mp4文件(比如test.mp4)到你站根目录下，然后在浏览器地址栏中，输入该视频的地址 <span class="green">http://www.你的域名.com/test.mp4</span> 如果会弹出，提示下载该文件，则表明，服务器已添加了flv的mime类型 </h5>
+</fieldset>
+
+<fieldset>
+<legend>
+<h1>问题3: 如何添加mime类型，以便让服务器支持flv,mp4这样的后辍</h1>
+</legend>
+<div class="content">
+  <h5 >添加mime类型的步骤参见 <a href="http://www.cuplayer.net/apps/CuPlayerHelp/Help71.html" target="_blank" class="cOrange3">http://www.cuplayer.net/apps/CuPlayerHelp/Help71.html</a></h5>
+  </fieldset>
+</div>
+<!--code/end-->
+
+
+<!--footer/begin-->
+<div id="footer" class="en">
+<div class="copy"><p class="about">酷播 <strong><a href="http://www.CuPlayer.com" target="_blank">www.CuPlayer.com</a></strong> / 让传播更生动 2010-2012 (C) All Rights Reserved.</p>
+<p class="contact"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=176797520&site=qq&menu=yes"><img src="http://wpa.qq.com/pa?p=2:176797520:41 &r=0.7833309615211892" alt="酷播在线客服" border="0" align="absmiddle" title="点击这里给我发消息"></a> 客服QQ:<strong>176797520</strong></p> 
+<div style="display:none;"><script src="http://s84.cnzz.com/stat.php?id=4636346&web_id=4636346&show=pic" language="JavaScript"></script></div>
+</div>
+</div>
+<!--footer/end-->
+ 
+</body>
+</html>

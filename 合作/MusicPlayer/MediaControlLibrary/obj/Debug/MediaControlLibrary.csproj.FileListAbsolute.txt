@@ -1,0 +1,29 @@
+D:\My Documents\C#控件\MediaControlLibrary\MediaControlLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\C#控件\MediaControlLibrary\MediaControlLibrary\obj\Debug\MediaControlLibrary.Properties.Resources.resources
+D:\My Documents\C#控件\MediaControlLibrary\MediaControlLibrary\obj\Debug\GenerateResource.read.1.tlog
+D:\My Documents\C#控件\MediaControlLibrary\MediaControlLibrary\obj\Debug\GenerateResource.write.1.tlog
+D:\My Documents\C#控件\MediaControlLibrary\MediaControlLibrary\bin\Debug\MediaControlLibrary.dll
+D:\My Documents\C#控件\MediaControlLibrary\MediaControlLibrary\bin\Debug\MediaControlLibrary.pdb
+D:\My Documents\C#控件\MediaControlLibrary\MediaControlLibrary\obj\Debug\MediaControlLibrary.dll
+D:\My Documents\C#控件\MediaControlLibrary\MediaControlLibrary\obj\Debug\MediaControlLibrary.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\MediaControlLibrary\bin\Debug\MediaControlLibrary.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\MediaControlLibrary\bin\Debug\MediaControlLibrary.pdb
+C:\Users\Tianyong\Desktop\Music Player工作副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.Properties.Resources.resources
+C:\Users\Tianyong\Desktop\Music Player工作副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\Music Player工作副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.dll
+C:\Users\Tianyong\Desktop\Music Player工作副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\MediaControlLibrary\bin\Debug\MediaControlLibrary.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\MediaControlLibrary\bin\Debug\MediaControlLibrary.pdb
+C:\Users\Tianyong\Desktop\MusicPlayer\MediaControlLibrary\obj\Debug\MediaControlLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\MusicPlayer\MediaControlLibrary\obj\Debug\MediaControlLibrary.Properties.Resources.resources
+C:\Users\Tianyong\Desktop\MusicPlayer\MediaControlLibrary\obj\Debug\MediaControlLibrary.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\MusicPlayer\MediaControlLibrary\obj\Debug\MediaControlLibrary.dll
+C:\Users\Tianyong\Desktop\MusicPlayer\MediaControlLibrary\obj\Debug\MediaControlLibrary.pdb
+H:\工作暂存区\合作\MusicPlayer - 副本\MediaControlLibrary\bin\Debug\MediaControlLibrary.dll
+H:\工作暂存区\合作\MusicPlayer - 副本\MediaControlLibrary\bin\Debug\MediaControlLibrary.pdb
+H:\工作暂存区\合作\MusicPlayer - 副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.csprojResolveAssemblyReference.cache
+H:\工作暂存区\合作\MusicPlayer - 副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.Properties.Resources.resources
+H:\工作暂存区\合作\MusicPlayer - 副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.csproj.GenerateResource.Cache
+H:\工作暂存区\合作\MusicPlayer - 副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.dll
+H:\工作暂存区\合作\MusicPlayer - 副本\MediaControlLibrary\obj\Debug\MediaControlLibrary.pdb

@@ -1,0 +1,17 @@
+D:\Users\sky-line\Documents\Visual Studio 2010\Projects\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\bin\Release\_CUSTOM_CONTROLS.dll
+D:\Users\sky-line\Documents\Visual Studio 2010\Projects\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\bin\Release\_CUSTOM_CONTROLS.pdb
+D:\Users\sky-line\Documents\Visual Studio 2010\Projects\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\ResolveAssemblyReference.cache
+D:\Users\sky-line\Documents\Visual Studio 2010\Projects\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.Properties.Resources.resources
+D:\Users\sky-line\Documents\Visual Studio 2010\Projects\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.ChatListBox.resources
+D:\Users\sky-line\Documents\Visual Studio 2010\Projects\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\ResGen.read.1.tlog
+D:\Users\sky-line\Documents\Visual Studio 2010\Projects\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\ResGen.write.1.tlog
+D:\Users\sky-line\Documents\Visual Studio 2010\Projects\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.dll
+D:\Users\sky-line\Documents\Visual Studio 2010\Projects\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.pdb
+C:\Users\Tianyong\Desktop\仿QQ\C#仿QQ列表\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\bin\Release\_CUSTOM_CONTROLS.dll
+C:\Users\Tianyong\Desktop\仿QQ\C#仿QQ列表\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\bin\Release\_CUSTOM_CONTROLS.pdb
+C:\Users\Tianyong\Desktop\仿QQ\C#仿QQ列表\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.csprojResolveAssemblyReference.cache
+C:\Users\Tianyong\Desktop\仿QQ\C#仿QQ列表\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.Properties.Resources.resources
+C:\Users\Tianyong\Desktop\仿QQ\C#仿QQ列表\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.ChatListBox.resources
+C:\Users\Tianyong\Desktop\仿QQ\C#仿QQ列表\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.csproj.GenerateResource.Cache
+C:\Users\Tianyong\Desktop\仿QQ\C#仿QQ列表\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.dll
+C:\Users\Tianyong\Desktop\仿QQ\C#仿QQ列表\_CUSTOM_CONTROLS\_CUSTOM_CONTROLS\obj\Release\_CUSTOM_CONTROLS.pdb
